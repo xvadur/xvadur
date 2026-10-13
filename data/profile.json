@@ -1,0 +1,963 @@
+{
+  "schema_version": 1,
+  "snapshot_at": "2026-10-13T07:21:29.079956+00:00",
+  "as_of": "2026-10-13",
+  "timezone": "Europe/Bratislava",
+  "corpus_last_ingest": "2026-10-13T07:20:32.666Z",
+  "corpus": {
+    "entries": 9443,
+    "words": 646607,
+    "active_days": 159,
+    "first_day": "2026-01-17",
+    "last_day": "2026-10-12"
+  },
+  "sources": [
+    {
+      "source": "codex",
+      "entries": 6570,
+      "words": 315164
+    },
+    {
+      "source": "obsidian",
+      "entries": 48,
+      "words": 171927
+    },
+    {
+      "source": "claude",
+      "entries": 1856,
+      "words": 95868
+    },
+    {
+      "source": "dia",
+      "entries": 750,
+      "words": 32615
+    },
+    {
+      "source": "chatgpt",
+      "entries": 219,
+      "words": 31033
+    }
+  ],
+  "writing_days": [
+    {
+      "day": "2026-01-17",
+      "entries": 1,
+      "words": 633
+    },
+    {
+      "day": "2026-01-18",
+      "entries": 1,
+      "words": 2705
+    },
+    {
+      "day": "2026-02-05",
+      "entries": 1,
+      "words": 624
+    },
+    {
+      "day": "2026-03-12",
+      "entries": 2,
+      "words": 2011
+    },
+    {
+      "day": "2026-03-22",
+      "entries": 1,
+      "words": 2640
+    },
+    {
+      "day": "2026-03-31",
+      "entries": 1,
+      "words": 2470
+    },
+    {
+      "day": "2026-04-04",
+      "entries": 1,
+      "words": 8718
+    },
+    {
+      "day": "2026-04-07",
+      "entries": 12,
+      "words": 49065
+    },
+    {
+      "day": "2026-04-09",
+      "entries": 1,
+      "words": 1119
+    },
+    {
+      "day": "2026-04-13",
+      "entries": 1,
+      "words": 858
+    },
+    {
+      "day": "2026-04-16",
+      "entries": 2,
+      "words": 26339
+    },
+    {
+      "day": "2026-04-24",
+      "entries": 4,
+      "words": 7955
+    },
+    {
+      "day": "2026-04-27",
+      "entries": 2,
+      "words": 20336
+    },
+    {
+      "day": "2026-05-01",
+      "entries": 1,
+      "words": 827
+    },
+    {
+      "day": "2026-05-12",
+      "entries": 1,
+      "words": 573
+    },
+    {
+      "day": "2026-05-16",
+      "entries": 5,
+      "words": 18621
+    },
+    {
+      "day": "2026-05-18",
+      "entries": 37,
+      "words": 1119
+    },
+    {
+      "day": "2026-05-19",
+      "entries": 37,
+      "words": 2370
+    },
+    {
+      "day": "2026-05-20",
+      "entries": 54,
+      "words": 2895
+    },
+    {
+      "day": "2026-05-21",
+      "entries": 42,
+      "words": 7198
+    },
+    {
+      "day": "2026-05-22",
+      "entries": 1,
+      "words": 3041
+    },
+    {
+      "day": "2026-05-23",
+      "entries": 4,
+      "words": 3649
+    },
+    {
+      "day": "2026-05-24",
+      "entries": 36,
+      "words": 2005
+    },
+    {
+      "day": "2026-05-25",
+      "entries": 11,
+      "words": 364
+    },
+    {
+      "day": "2026-05-26",
+      "entries": 93,
+      "words": 8055
+    },
+    {
+      "day": "2026-05-27",
+      "entries": 18,
+      "words": 223
+    },
+    {
+      "day": "2026-05-28",
+      "entries": 10,
+      "words": 155
+    },
+    {
+      "day": "2026-05-29",
+      "entries": 80,
+      "words": 7012
+    },
+    {
+      "day": "2026-05-30",
+      "entries": 31,
+      "words": 1175
+    },
+    {
+      "day": "2026-06-01",
+      "entries": 54,
+      "words": 1416
+    },
+    {
+      "day": "2026-06-02",
+      "entries": 30,
+      "words": 4653
+    },
+    {
+      "day": "2026-06-03",
+      "entries": 18,
+      "words": 3153
+    },
+    {
+      "day": "2026-06-04",
+      "entries": 66,
+      "words": 2012
+    },
+    {
+      "day": "2026-06-05",
+      "entries": 22,
+      "words": 1558
+    },
+    {
+      "day": "2026-06-06",
+      "entries": 100,
+      "words": 6241
+    },
+    {
+      "day": "2026-06-07",
+      "entries": 86,
+      "words": 2919
+    },
+    {
+      "day": "2026-06-08",
+      "entries": 18,
+      "words": 6393
+    },
+    {
+      "day": "2026-06-10",
+      "entries": 54,
+      "words": 978
+    },
+    {
+      "day": "2026-06-11",
+      "entries": 8,
+      "words": 446
+    },
+    {
+      "day": "2026-06-12",
+      "entries": 20,
+      "words": 756
+    },
+    {
+      "day": "2026-06-13",
+      "entries": 9,
+      "words": 563
+    },
+    {
+      "day": "2026-06-14",
+      "entries": 5,
+      "words": 86
+    },
+    {
+      "day": "2026-06-15",
+      "entries": 44,
+      "words": 3922
+    },
+    {
+      "day": "2026-06-16",
+      "entries": 37,
+      "words": 1039
+    },
+    {
+      "day": "2026-06-17",
+      "entries": 43,
+      "words": 2502
+    },
+    {
+      "day": "2026-06-18",
+      "entries": 94,
+      "words": 8213
+    },
+    {
+      "day": "2026-06-19",
+      "entries": 66,
+      "words": 5662
+    },
+    {
+      "day": "2026-06-20",
+      "entries": 24,
+      "words": 3480
+    },
+    {
+      "day": "2026-06-21",
+      "entries": 68,
+      "words": 4901
+    },
+    {
+      "day": "2026-06-22",
+      "entries": 28,
+      "words": 4175
+    },
+    {
+      "day": "2026-06-23",
+      "entries": 98,
+      "words": 7597
+    },
+    {
+      "day": "2026-06-24",
+      "entries": 34,
+      "words": 1601
+    },
+    {
+      "day": "2026-06-25",
+      "entries": 70,
+      "words": 2809
+    },
+    {
+      "day": "2026-06-26",
+      "entries": 54,
+      "words": 1761
+    },
+    {
+      "day": "2026-06-27",
+      "entries": 37,
+      "words": 1488
+    },
+    {
+      "day": "2026-06-28",
+      "entries": 75,
+      "words": 4167
+    },
+    {
+      "day": "2026-06-29",
+      "entries": 31,
+      "words": 1556
+    },
+    {
+      "day": "2026-06-30",
+      "entries": 83,
+      "words": 3838
+    },
+    {
+      "day": "2026-07-01",
+      "entries": 74,
+      "words": 6226
+    },
+    {
+      "day": "2026-07-02",
+      "entries": 11,
+      "words": 228
+    },
+    {
+      "day": "2026-07-03",
+      "entries": 19,
+      "words": 951
+    },
+    {
+      "day": "2026-07-04",
+      "entries": 42,
+      "words": 2178
+    },
+    {
+      "day": "2026-07-05",
+      "entries": 78,
+      "words": 3104
+    },
+    {
+      "day": "2026-07-06",
+      "entries": 7,
+      "words": 74
+    },
+    {
+      "day": "2026-07-07",
+      "entries": 43,
+      "words": 1616
+    },
+    {
+      "day": "2026-07-08",
+      "entries": 34,
+      "words": 1595
+    },
+    {
+      "day": "2026-07-09",
+      "entries": 91,
+      "words": 5758
+    },
+    {
+      "day": "2026-07-10",
+      "entries": 45,
+      "words": 1122
+    },
+    {
+      "day": "2026-07-11",
+      "entries": 54,
+      "words": 1921
+    },
+    {
+      "day": "2026-07-12",
+      "entries": 13,
+      "words": 593
+    },
+    {
+      "day": "2026-07-13",
+      "entries": 31,
+      "words": 1420
+    },
+    {
+      "day": "2026-07-14",
+      "entries": 19,
+      "words": 1366
+    },
+    {
+      "day": "2026-07-15",
+      "entries": 73,
+      "words": 1859
+    },
+    {
+      "day": "2026-07-16",
+      "entries": 73,
+      "words": 2432
+    },
+    {
+      "day": "2026-07-17",
+      "entries": 10,
+      "words": 183
+    },
+    {
+      "day": "2026-07-18",
+      "entries": 1,
+      "words": 7
+    },
+    {
+      "day": "2026-07-20",
+      "entries": 1,
+      "words": 32
+    },
+    {
+      "day": "2026-07-22",
+      "entries": 2,
+      "words": 31
+    },
+    {
+      "day": "2026-07-24",
+      "entries": 1,
+      "words": 3
+    },
+    {
+      "day": "2026-07-25",
+      "entries": 17,
+      "words": 393
+    },
+    {
+      "day": "2026-07-26",
+      "entries": 102,
+      "words": 4058
+    },
+    {
+      "day": "2026-07-27",
+      "entries": 62,
+      "words": 2600
+    },
+    {
+      "day": "2026-07-28",
+      "entries": 81,
+      "words": 2971
+    },
+    {
+      "day": "2026-07-29",
+      "entries": 35,
+      "words": 3127
+    },
+    {
+      "day": "2026-07-30",
+      "entries": 82,
+      "words": 5365
+    },
+    {
+      "day": "2026-07-31",
+      "entries": 99,
+      "words": 2598
+    },
+    {
+      "day": "2026-08-01",
+      "entries": 63,
+      "words": 1912
+    },
+    {
+      "day": "2026-08-02",
+      "entries": 88,
+      "words": 6635
+    },
+    {
+      "day": "2026-08-03",
+      "entries": 124,
+      "words": 3861
+    },
+    {
+      "day": "2026-08-04",
+      "entries": 100,
+      "words": 5682
+    },
+    {
+      "day": "2026-08-05",
+      "entries": 61,
+      "words": 2558
+    },
+    {
+      "day": "2026-08-06",
+      "entries": 89,
+      "words": 4438
+    },
+    {
+      "day": "2026-08-07",
+      "entries": 92,
+      "words": 9589
+    },
+    {
+      "day": "2026-08-08",
+      "entries": 103,
+      "words": 1928
+    },
+    {
+      "day": "2026-08-09",
+      "entries": 29,
+      "words": 1919
+    },
+    {
+      "day": "2026-08-10",
+      "entries": 40,
+      "words": 3205
+    },
+    {
+      "day": "2026-08-11",
+      "entries": 73,
+      "words": 3905
+    },
+    {
+      "day": "2026-08-12",
+      "entries": 76,
+      "words": 2559
+    },
+    {
+      "day": "2026-08-13",
+      "entries": 83,
+      "words": 3924
+    },
+    {
+      "day": "2026-08-14",
+      "entries": 26,
+      "words": 1866
+    },
+    {
+      "day": "2026-08-15",
+      "entries": 104,
+      "words": 4113
+    },
+    {
+      "day": "2026-08-16",
+      "entries": 95,
+      "words": 2854
+    },
+    {
+      "day": "2026-08-17",
+      "entries": 186,
+      "words": 5716
+    },
+    {
+      "day": "2026-08-18",
+      "entries": 17,
+      "words": 1013
+    },
+    {
+      "day": "2026-08-19",
+      "entries": 21,
+      "words": 344
+    },
+    {
+      "day": "2026-08-20",
+      "entries": 160,
+      "words": 3884
+    },
+    {
+      "day": "2026-08-21",
+      "entries": 77,
+      "words": 3929
+    },
+    {
+      "day": "2026-08-22",
+      "entries": 95,
+      "words": 6008
+    },
+    {
+      "day": "2026-08-23",
+      "entries": 41,
+      "words": 8285
+    },
+    {
+      "day": "2026-08-24",
+      "entries": 23,
+      "words": 357
+    },
+    {
+      "day": "2026-08-25",
+      "entries": 46,
+      "words": 1784
+    },
+    {
+      "day": "2026-08-26",
+      "entries": 82,
+      "words": 2289
+    },
+    {
+      "day": "2026-08-27",
+      "entries": 51,
+      "words": 1311
+    },
+    {
+      "day": "2026-08-28",
+      "entries": 127,
+      "words": 4133
+    },
+    {
+      "day": "2026-08-29",
+      "entries": 111,
+      "words": 4618
+    },
+    {
+      "day": "2026-08-30",
+      "entries": 52,
+      "words": 2317
+    },
+    {
+      "day": "2026-08-31",
+      "entries": 26,
+      "words": 1626
+    },
+    {
+      "day": "2026-09-01",
+      "entries": 117,
+      "words": 4207
+    },
+    {
+      "day": "2026-09-02",
+      "entries": 132,
+      "words": 2482
+    },
+    {
+      "day": "2026-09-03",
+      "entries": 125,
+      "words": 2695
+    },
+    {
+      "day": "2026-09-04",
+      "entries": 153,
+      "words": 2464
+    },
+    {
+      "day": "2026-09-05",
+      "entries": 70,
+      "words": 2606
+    },
+    {
+      "day": "2026-09-06",
+      "entries": 121,
+      "words": 10635
+    },
+    {
+      "day": "2026-09-07",
+      "entries": 72,
+      "words": 2941
+    },
+    {
+      "day": "2026-09-08",
+      "entries": 117,
+      "words": 9739
+    },
+    {
+      "day": "2026-09-09",
+      "entries": 59,
+      "words": 4248
+    },
+    {
+      "day": "2026-09-10",
+      "entries": 67,
+      "words": 3909
+    },
+    {
+      "day": "2026-09-11",
+      "entries": 117,
+      "words": 4995
+    },
+    {
+      "day": "2026-09-12",
+      "entries": 76,
+      "words": 3027
+    },
+    {
+      "day": "2026-09-13",
+      "entries": 39,
+      "words": 4439
+    },
+    {
+      "day": "2026-09-14",
+      "entries": 41,
+      "words": 2285
+    },
+    {
+      "day": "2026-09-15",
+      "entries": 73,
+      "words": 4843
+    },
+    {
+      "day": "2026-09-16",
+      "entries": 41,
+      "words": 3442
+    },
+    {
+      "day": "2026-09-17",
+      "entries": 71,
+      "words": 1507
+    },
+    {
+      "day": "2026-09-18",
+      "entries": 124,
+      "words": 6169
+    },
+    {
+      "day": "2026-09-19",
+      "entries": 59,
+      "words": 2865
+    },
+    {
+      "day": "2026-09-20",
+      "entries": 95,
+      "words": 2297
+    },
+    {
+      "day": "2026-09-21",
+      "entries": 127,
+      "words": 14267
+    },
+    {
+      "day": "2026-09-22",
+      "entries": 154,
+      "words": 11633
+    },
+    {
+      "day": "2026-09-23",
+      "entries": 104,
+      "words": 7028
+    },
+    {
+      "day": "2026-09-24",
+      "entries": 145,
+      "words": 12240
+    },
+    {
+      "day": "2026-09-25",
+      "entries": 93,
+      "words": 6402
+    },
+    {
+      "day": "2026-09-26",
+      "entries": 173,
+      "words": 8118
+    },
+    {
+      "day": "2026-09-27",
+      "entries": 51,
+      "words": 1584
+    },
+    {
+      "day": "2026-09-28",
+      "entries": 51,
+      "words": 2675
+    },
+    {
+      "day": "2026-09-29",
+      "entries": 194,
+      "words": 9373
+    },
+    {
+      "day": "2026-09-30",
+      "entries": 108,
+      "words": 3730
+    },
+    {
+      "day": "2026-10-01",
+      "entries": 165,
+      "words": 4492
+    },
+    {
+      "day": "2026-10-02",
+      "entries": 187,
+      "words": 6227
+    },
+    {
+      "day": "2026-10-03",
+      "entries": 43,
+      "words": 4797
+    },
+    {
+      "day": "2026-10-04",
+      "entries": 314,
+      "words": 10346
+    },
+    {
+      "day": "2026-10-05",
+      "entries": 99,
+      "words": 2488
+    },
+    {
+      "day": "2026-10-06",
+      "entries": 63,
+      "words": 1879
+    },
+    {
+      "day": "2026-10-07",
+      "entries": 49,
+      "words": 1262
+    },
+    {
+      "day": "2026-10-08",
+      "entries": 22,
+      "words": 456
+    },
+    {
+      "day": "2026-10-09",
+      "entries": 33,
+      "words": 2326
+    },
+    {
+      "day": "2026-10-10",
+      "entries": 20,
+      "words": 218
+    },
+    {
+      "day": "2026-10-11",
+      "entries": 29,
+      "words": 5000
+    },
+    {
+      "day": "2026-10-12",
+      "entries": 22,
+      "words": 11258
+    }
+  ],
+  "workspace_git": {
+    "commits": 588,
+    "repositories": 13,
+    "first_day": "2026-09-02",
+    "last_day": "2026-10-11"
+  },
+  "commit_days": [
+    {
+      "day": "2026-09-02",
+      "commits": 1
+    },
+    {
+      "day": "2026-09-03",
+      "commits": 4
+    },
+    {
+      "day": "2026-09-17",
+      "commits": 5
+    },
+    {
+      "day": "2026-09-18",
+      "commits": 3
+    },
+    {
+      "day": "2026-09-19",
+      "commits": 10
+    },
+    {
+      "day": "2026-09-20",
+      "commits": 14
+    },
+    {
+      "day": "2026-09-22",
+      "commits": 10
+    },
+    {
+      "day": "2026-09-23",
+      "commits": 17
+    },
+    {
+      "day": "2026-09-24",
+      "commits": 32
+    },
+    {
+      "day": "2026-09-25",
+      "commits": 32
+    },
+    {
+      "day": "2026-09-26",
+      "commits": 81
+    },
+    {
+      "day": "2026-09-27",
+      "commits": 12
+    },
+    {
+      "day": "2026-09-28",
+      "commits": 4
+    },
+    {
+      "day": "2026-09-29",
+      "commits": 74
+    },
+    {
+      "day": "2026-09-30",
+      "commits": 15
+    },
+    {
+      "day": "2026-10-01",
+      "commits": 68
+    },
+    {
+      "day": "2026-10-02",
+      "commits": 68
+    },
+    {
+      "day": "2026-10-03",
+      "commits": 10
+    },
+    {
+      "day": "2026-10-04",
+      "commits": 85
+    },
+    {
+      "day": "2026-10-06",
+      "commits": 5
+    },
+    {
+      "day": "2026-10-07",
+      "commits": 20
+    },
+    {
+      "day": "2026-10-08",
+      "commits": 4
+    },
+    {
+      "day": "2026-10-09",
+      "commits": 11
+    },
+    {
+      "day": "2026-10-11",
+      "commits": 3
+    }
+  ],
+  "provider_snapshots": [
+    {
+      "provider": "Codex",
+      "reported_tokens": 22400000000,
+      "display": "22.4B",
+      "scope": "Lifetime tokens as displayed in the supplied profile screenshot",
+      "evidence": "assets/evidence/codex-profile.png",
+      "received_on": "2026-10-11"
+    },
+    {
+      "provider": "Claude Code",
+      "reported_tokens": 14400000000,
+      "display": "14.4B",
+      "scope": "Total tokens with All selected in the supplied usage screenshot",
+      "sessions": 141,
+      "messages": 49318,
+      "active_days": 27,
+      "evidence": "assets/evidence/claude-usage.png",
+      "received_on": "2026-10-11"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+.impeccable/
+docs/internal/
+preview/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="372" viewBox="0 0 920 372" role="img" aria-labelledby="title desc">
+<title id="title">Kalendár písania · ľudské slová za deň, indexované v Korpuse</title>
+<desc id="desc">Kalendár ľudských slov napísaných za deň počas 26 týždňov (2026-04-20 až 2026-10-13), indexovaných v Korpuse: 549 425 slov v 148 dňoch, plus týždenné počty indexovaných commitov vo workspace od 2026-09-02.</desc>
+<text x="0" y="20" fill="#1F2328" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:600;">Kalendár písania · ľudské slová za deň, indexované v Korpuse</text>
+<text x="920" y="20" fill="#59636E" text-anchor="end" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;font-variant-numeric:tabular-nums;">26 týždňov · 2026-04-20 → 2026-10-13</text>
+<text x="72" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">máj</text>
+<text x="212" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">jún</text>
+<text x="324" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">júl</text>
+<text x="436" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">aug</text>
+<text x="576" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">sep</text>
+<text x="688" y="62" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">okt</text>
+<text x="0" y="91.3" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">po</text>
+<text x="0" y="147.3" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">st</text>
+<text x="0" y="203.3" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">pi</text>
+<text x="0" y="259.3" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">ne</text>
+<rect x="44" y="74" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-20: 0</title></rect>
+<rect x="44" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-21: 0</title></rect>
+<rect x="44" y="130" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-22: 0</title></rect>
+<rect x="44" y="158" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-23: 0</title></rect>
+<rect x="44" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-04-24: 7 955</title></rect>
+<rect x="44" y="214" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-25: 0</title></rect>
+<rect x="44" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-26: 0</title></rect>
+<rect x="72" y="74" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-04-27: 20 336</title></rect>
+<rect x="72" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-28: 0</title></rect>
+<rect x="72" y="130" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-29: 0</title></rect>
+<rect x="72" y="158" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-04-30: 0</title></rect>
+<rect x="72" y="186" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-05-01: 827</title></rect>
+<rect x="72" y="214" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-02: 0</title></rect>
+<rect x="72" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-03: 0</title></rect>
+<rect x="100" y="74" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-04: 0</title></rect>
+<rect x="100" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-05: 0</title></rect>
+<rect x="100" y="130" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-06: 0</title></rect>
+<rect x="100" y="158" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-07: 0</title></rect>
+<rect x="100" y="186" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-08: 0</title></rect>
+<rect x="100" y="214" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-09: 0</title></rect>
+<rect x="100" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-10: 0</title></rect>
+<rect x="128" y="74" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-11: 0</title></rect>
+<rect x="128" y="102" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-05-12: 573</title></rect>
+<rect x="128" y="130" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-13: 0</title></rect>
+<rect x="128" y="158" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-14: 0</title></rect>
+<rect x="128" y="186" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-15: 0</title></rect>
+<rect x="128" y="214" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-05-16: 18 621</title></rect>
+<rect x="128" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-17: 0</title></rect>
+<rect x="156" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-05-18: 1 119</title></rect>
+<rect x="156" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-05-19: 2 370</title></rect>
+<rect x="156" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-05-20: 2 895</title></rect>
+<rect x="156" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-05-21: 7 198</title></rect>
+<rect x="156" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-05-22: 3 041</title></rect>
+<rect x="156" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-05-23: 3 649</title></rect>
+<rect x="156" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-05-24: 2 005</title></rect>
+<rect x="184" y="74" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-05-25: 364</title></rect>
+<rect x="184" y="102" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-05-26: 8 055</title></rect>
+<rect x="184" y="130" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-05-27: 223</title></rect>
+<rect x="184" y="158" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-05-28: 155</title></rect>
+<rect x="184" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-05-29: 7 012</title></rect>
+<rect x="184" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-05-30: 1 175</title></rect>
+<rect x="184" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-05-31: 0</title></rect>
+<rect x="212" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-01: 1 416</title></rect>
+<rect x="212" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-02: 4 653</title></rect>
+<rect x="212" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-03: 3 153</title></rect>
+<rect x="212" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-04: 2 012</title></rect>
+<rect x="212" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-05: 1 558</title></rect>
+<rect x="212" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-06: 6 241</title></rect>
+<rect x="212" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-07: 2 919</title></rect>
+<rect x="240" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-08: 6 393</title></rect>
+<rect x="240" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-06-09: 0</title></rect>
+<rect x="240" y="130" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-06-10: 978</title></rect>
+<rect x="240" y="158" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-06-11: 446</title></rect>
+<rect x="240" y="186" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-06-12: 756</title></rect>
+<rect x="240" y="214" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-06-13: 563</title></rect>
+<rect x="240" y="242" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-06-14: 86</title></rect>
+<rect x="268" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-15: 3 922</title></rect>
+<rect x="268" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-16: 1 039</title></rect>
+<rect x="268" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-17: 2 502</title></rect>
+<rect x="268" y="158" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-06-18: 8 213</title></rect>
+<rect x="268" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-19: 5 662</title></rect>
+<rect x="268" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-20: 3 480</title></rect>
+<rect x="268" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-21: 4 901</title></rect>
+<rect x="296" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-22: 4 175</title></rect>
+<rect x="296" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-23: 7 597</title></rect>
+<rect x="296" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-24: 1 601</title></rect>
+<rect x="296" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-25: 2 809</title></rect>
+<rect x="296" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-26: 1 761</title></rect>
+<rect x="296" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-27: 1 488</title></rect>
+<rect x="296" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-28: 4 167</title></rect>
+<rect x="324" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-06-29: 1 556</title></rect>
+<rect x="324" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-06-30: 3 838</title></rect>
+<rect x="324" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-01: 6 226</title></rect>
+<rect x="324" y="158" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-02: 228</title></rect>
+<rect x="324" y="186" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-03: 951</title></rect>
+<rect x="324" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-04: 2 178</title></rect>
+<rect x="324" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-05: 3 104</title></rect>
+<rect x="352" y="74" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-06: 74</title></rect>
+<rect x="352" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-07: 1 616</title></rect>
+<rect x="352" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-08: 1 595</title></rect>
+<rect x="352" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-09: 5 758</title></rect>
+<rect x="352" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-10: 1 122</title></rect>
+<rect x="352" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-11: 1 921</title></rect>
+<rect x="352" y="242" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-12: 593</title></rect>
+<rect x="380" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-13: 1 420</title></rect>
+<rect x="380" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-14: 1 366</title></rect>
+<rect x="380" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-15: 1 859</title></rect>
+<rect x="380" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-16: 2 432</title></rect>
+<rect x="380" y="186" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-17: 183</title></rect>
+<rect x="380" y="214" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-18: 7</title></rect>
+<rect x="380" y="242" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-07-19: 0</title></rect>
+<rect x="408" y="74" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-20: 32</title></rect>
+<rect x="408" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-07-21: 0</title></rect>
+<rect x="408" y="130" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-22: 31</title></rect>
+<rect x="408" y="158" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-07-23: 0</title></rect>
+<rect x="408" y="186" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-24: 3</title></rect>
+<rect x="408" y="214" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-07-25: 393</title></rect>
+<rect x="408" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-26: 4 058</title></rect>
+<rect x="436" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-27: 2 600</title></rect>
+<rect x="436" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-28: 2 971</title></rect>
+<rect x="436" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-29: 3 127</title></rect>
+<rect x="436" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-07-30: 5 365</title></rect>
+<rect x="436" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-07-31: 2 598</title></rect>
+<rect x="436" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-01: 1 912</title></rect>
+<rect x="436" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-02: 6 635</title></rect>
+<rect x="464" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-03: 3 861</title></rect>
+<rect x="464" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-04: 5 682</title></rect>
+<rect x="464" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-05: 2 558</title></rect>
+<rect x="464" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-06: 4 438</title></rect>
+<rect x="464" y="186" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-08-07: 9 589</title></rect>
+<rect x="464" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-08: 1 928</title></rect>
+<rect x="464" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-09: 1 919</title></rect>
+<rect x="492" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-10: 3 205</title></rect>
+<rect x="492" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-11: 3 905</title></rect>
+<rect x="492" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-12: 2 559</title></rect>
+<rect x="492" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-13: 3 924</title></rect>
+<rect x="492" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-14: 1 866</title></rect>
+<rect x="492" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-15: 4 113</title></rect>
+<rect x="492" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-16: 2 854</title></rect>
+<rect x="520" y="74" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-17: 5 716</title></rect>
+<rect x="520" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-18: 1 013</title></rect>
+<rect x="520" y="130" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-08-19: 344</title></rect>
+<rect x="520" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-20: 3 884</title></rect>
+<rect x="520" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-21: 3 929</title></rect>
+<rect x="520" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-22: 6 008</title></rect>
+<rect x="520" y="242" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-08-23: 8 285</title></rect>
+<rect x="548" y="74" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-08-24: 357</title></rect>
+<rect x="548" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-25: 1 784</title></rect>
+<rect x="548" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-26: 2 289</title></rect>
+<rect x="548" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-27: 1 311</title></rect>
+<rect x="548" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-28: 4 133</title></rect>
+<rect x="548" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-08-29: 4 618</title></rect>
+<rect x="548" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-30: 2 317</title></rect>
+<rect x="576" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-08-31: 1 626</title></rect>
+<rect x="576" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-01: 4 207</title></rect>
+<rect x="576" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-02: 2 482</title></rect>
+<rect x="576" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-03: 2 695</title></rect>
+<rect x="576" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-04: 2 464</title></rect>
+<rect x="576" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-05: 2 606</title></rect>
+<rect x="576" y="242" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-06: 10 635</title></rect>
+<rect x="604" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-07: 2 941</title></rect>
+<rect x="604" y="102" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-08: 9 739</title></rect>
+<rect x="604" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-09: 4 248</title></rect>
+<rect x="604" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-10: 3 909</title></rect>
+<rect x="604" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-11: 4 995</title></rect>
+<rect x="604" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-12: 3 027</title></rect>
+<rect x="604" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-13: 4 439</title></rect>
+<rect x="632" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-14: 2 285</title></rect>
+<rect x="632" y="102" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-15: 4 843</title></rect>
+<rect x="632" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-16: 3 442</title></rect>
+<rect x="632" y="158" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-17: 1 507</title></rect>
+<rect x="632" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-18: 6 169</title></rect>
+<rect x="632" y="214" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-19: 2 865</title></rect>
+<rect x="632" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-20: 2 297</title></rect>
+<rect x="660" y="74" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-21: 14 267</title></rect>
+<rect x="660" y="102" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-22: 11 633</title></rect>
+<rect x="660" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-23: 7 028</title></rect>
+<rect x="660" y="158" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-24: 12 240</title></rect>
+<rect x="660" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-25: 6 402</title></rect>
+<rect x="660" y="214" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-26: 8 118</title></rect>
+<rect x="660" y="242" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-27: 1 584</title></rect>
+<rect x="688" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-09-28: 2 675</title></rect>
+<rect x="688" y="102" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-09-29: 9 373</title></rect>
+<rect x="688" y="130" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-09-30: 3 730</title></rect>
+<rect x="688" y="158" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-10-01: 4 492</title></rect>
+<rect x="688" y="186" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-10-02: 6 227</title></rect>
+<rect x="688" y="214" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-10-03: 4 797</title></rect>
+<rect x="688" y="242" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-10-04: 10 346</title></rect>
+<rect x="716" y="74" width="24" height="24" rx="4" fill="#F3A184"><title>2026-10-05: 2 488</title></rect>
+<rect x="716" y="102" width="24" height="24" rx="4" fill="#F3A184"><title>2026-10-06: 1 879</title></rect>
+<rect x="716" y="130" width="24" height="24" rx="4" fill="#F3A184"><title>2026-10-07: 1 262</title></rect>
+<rect x="716" y="158" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-10-08: 456</title></rect>
+<rect x="716" y="186" width="24" height="24" rx="4" fill="#F3A184"><title>2026-10-09: 2 326</title></rect>
+<rect x="716" y="214" width="24" height="24" rx="4" fill="#F9D4C8"><title>2026-10-10: 218</title></rect>
+<rect x="716" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-10-11: 5 000</title></rect>
+<rect x="744" y="74" width="24" height="24" rx="4" fill="#9E2F13"><title>2026-10-12: 11 258</title></rect>
+<rect x="744" y="102" width="24" height="24" rx="4" fill="#EBEDF0"><title>2026-10-13: 0</title></rect>
+<text x="792" y="86" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">slov/deň</text>
+<rect x="792" y="96" width="14" height="14" rx="3" fill="#EBEDF0"/>
+<text x="812" y="107.5" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">nič</text>
+<rect x="792" y="118" width="14" height="14" rx="3" fill="#F9D4C8"/>
+<text x="812" y="129.5" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1–999</text>
+<rect x="792" y="140" width="14" height="14" rx="3" fill="#F3A184"/>
+<text x="812" y="151.5" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1 000–2 999</text>
+<rect x="792" y="162" width="14" height="14" rx="3" fill="#ED4E26"/>
+<text x="812" y="173.5" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">3 000–7 999</text>
+<rect x="792" y="184" width="14" height="14" rx="3" fill="#9E2F13"/>
+<text x="812" y="195.5" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">8 000+</text>
+<text x="0" y="288" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">Okno: 549 425 slov v 148 dňoch · prázdne políčko = žiadne indexované ľudské písanie v ten deň, nie dôkaz nečinnosti</text>
+<text x="0" y="320" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">commity / týždeň</text>
+<line x1="44" y1="344.5" x2="768" y2="344.5" stroke="#D1D9E0" stroke-width="1"/>
+<rect x="576" y="342" width="24" height="2" rx="2" fill="#57606A"/>
+<text x="588" y="338" fill="#59636E" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">5</text>
+<rect x="632" y="340.6" width="24" height="3.4" rx="2" fill="#57606A"/>
+<text x="644" y="336.6" fill="#59636E" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">32</text>
+<rect x="660" y="324.7" width="24" height="19.3" rx="2" fill="#57606A"/>
+<text x="672" y="320.7" fill="#59636E" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">184</text>
+<rect x="688" y="310" width="24" height="34" rx="2" fill="#57606A"/>
+<text x="700" y="306" fill="#59636E" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">324</text>
+<rect x="716" y="339.5" width="24" height="4.5" rx="2" fill="#57606A"/>
+<text x="728" y="335.5" fill="#59636E" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">43</text>
+<text x="0" y="366" fill="#59636E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">indexované non-merge commity v 13 repozitároch workspace, vrátane lokálnych vetiev · 2026-09-02 → 2026-10-11 · spolu 588</text>
+</svg>

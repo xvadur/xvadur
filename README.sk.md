@@ -1,10 +1,7 @@
 <!-- generated:board:start -->
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/sk/board-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/sk/board-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sk/board-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/sk/board-light.svg">
-  <img alt="Merací panel Adama Rudavského (XVADUR), snímka 2026-10-13: 646 607 ľudských slov indexovaných v Korpuse (2026-01-17 až 2026-10-12); 159 dní s písaním; 588 commitov v 13 lokálnych repozitároch (2026-09-02 až 2026-10-11); Codex hlási 22.4B lifetime tokens a Claude Code 14.4B total tokens, obe zo snímok obrazovky prijatých 2026-10-11." src="assets/sk/board-light.svg" width="100%">
+  <source media="(max-width: 600px)" srcset="assets/sk/board-mobile-dark.svg">
+  <img alt="Merací panel Adama Rudavského (XVADUR), snímka 2026-10-13: 646 607 ľudských slov indexovaných v Korpuse (2026-01-17 až 2026-10-12); 159 dní s písaním; 588 commitov v 13 lokálnych repozitároch (2026-09-02 až 2026-10-11); Codex hlási 22.4B lifetime tokens a Claude Code 14.4B total tokens, obe zo snímok obrazovky prijatých 2026-10-11." src="assets/sk/board-dark.svg" width="100%">
 </picture>
 <!-- generated:board:end -->
 
@@ -37,9 +34,7 @@ Staršie experimenty zahŕňajú demo hlasovej recepcie, mapu starostlivosti o s
 
 <!-- generated:metrics:start -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sk/calendar-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/sk/calendar-light.svg">
-  <img alt="Kalendár ľudských slov napísaných za deň počas 26 týždňov (2026-04-20 až 2026-10-13), indexovaných v Korpuse: 549 425 slov v 148 dňoch, plus týždenné počty indexovaných commitov vo workspace od 2026-09-02." src="assets/sk/calendar-light.svg" width="100%">
+  <img alt="Kalendár ľudských slov napísaných za deň počas 26 týždňov (2026-04-20 až 2026-10-13), indexovaných v Korpuse: 549 425 slov v 148 dňoch, plus týždenné počty indexovaných commitov vo workspace od 2026-09-02." src="assets/sk/calendar-dark.svg" width="100%">
 </picture>
 
 **549 425 slov v 148 dňoch so záznamom** v tomto 26-týždňovom okne (2026-04-20 → 2026-10-13). Odtiene: 1–999 / 1 000–2 999 / 3 000–7 999 / 8 000+ slov za deň. Prázdne políčko znamená chýbajúci záznam. Spodné stĺpce ukazujú týždenné commity.
@@ -56,9 +51,7 @@ Staršie experimenty zahŕňajú demo hlasovej recepcie, mapu starostlivosti o s
 | Claude Code total tokens | **14.4B** | 141 sessions, 49 318 správ, 27 aktívnych dní; snímka prijatá 2026-10-11 |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sk/sources-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/sk/sources-light.svg">
-  <img alt="Ľudské slová po mesiacoch 2026 a podiel podľa zdroja: Codex 315 164 (48,7 %), Obsidian poznámky 171 927 (26,6 %), Claude Code 95 868 (14,8 %), Dia 32 615 (5,0 %), ChatGPT 31 033 (4,8 %)." src="assets/sk/sources-light.svg" width="100%">
+  <img alt="Ľudské slová po mesiacoch 2026 a podiel podľa zdroja: Codex 315 164 (48,7 %), Obsidian poznámky 171 927 (26,6 %), Claude Code 95 868 (14,8 %), Dia 32 615 (5,0 %), ChatGPT 31 033 (4,8 %)." src="assets/sk/sources-dark.svg" width="100%">
 </picture>
 
 Podľa zdroja: Codex 315 164 (48,7 %); Obsidian poznámky 171 927 (26,6 %); Claude Code 95 868 (14,8 %); Dia 32 615 (5,0 %); ChatGPT 31 033 (4,8 %).

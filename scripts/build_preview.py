@@ -95,7 +95,7 @@ def render_markdown(md: str, theme: str) -> str:
                 block.append(lines[i]); i += 1
             raw = "\n".join(block)
             # Fix the theme for each preview page and preserve the responsive board.
-            mobile = re.search(r'srcset="([^\"]+/board-mobile-' + theme + r'\.svg)"', raw)
+            mobile = re.search(r'srcset="([^\"]+/board-mobile-(?:light|dark)\.svg)"', raw)
             raw = re.sub(r"\s*<source [^>]*>", "", raw)
             if mobile:
                 raw = raw.replace("<picture>", '<picture>\n<source media="(max-width: 600px)" srcset="' + mobile.group(1) + '">')

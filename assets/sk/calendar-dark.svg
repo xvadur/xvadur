@@ -2,18 +2,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="372" viewBox="0 0 920 372" role="img" aria-labelledby="title desc">
 <title id="title">Kalendár písania · ľudské slová za deň, indexované v Korpuse</title>
 <desc id="desc">Kalendár ľudských slov napísaných za deň počas 26 týždňov (2026-04-20 až 2026-10-13), indexovaných v Korpuse: 549 425 slov v 148 dňoch, plus týždenné počty indexovaných commitov vo workspace od 2026-09-02.</desc>
+<rect width="920" height="372" fill="#0D1117"/>
 <text x="0" y="20" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:600;">Kalendár písania · ľudské slová za deň, indexované v Korpuse</text>
-<text x="920" y="20" fill="#9198A1" text-anchor="end" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;font-variant-numeric:tabular-nums;">26 týždňov · 2026-04-20 → 2026-10-13</text>
-<text x="72" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">máj</text>
-<text x="212" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">jún</text>
-<text x="324" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">júl</text>
-<text x="436" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">aug</text>
-<text x="576" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">sep</text>
-<text x="688" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">okt</text>
-<text x="0" y="91.3" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">po</text>
-<text x="0" y="147.3" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">st</text>
-<text x="0" y="203.3" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">pi</text>
-<text x="0" y="259.3" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">ne</text>
+<text x="920" y="20" fill="#A6B3C2" text-anchor="end" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;font-variant-numeric:tabular-nums;">26 týždňov · 2026-04-20 → 2026-10-13</text>
+<text x="72" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">máj</text>
+<text x="212" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">jún</text>
+<text x="324" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">júl</text>
+<text x="436" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">aug</text>
+<text x="576" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">sep</text>
+<text x="688" y="62" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">okt</text>
+<text x="0" y="91.3" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">po</text>
+<text x="0" y="147.3" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">st</text>
+<text x="0" y="203.3" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">pi</text>
+<text x="0" y="259.3" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;">ne</text>
 <rect x="44" y="74" width="24" height="24" rx="4" fill="#21262D"><title>2026-04-20: 0</title></rect>
 <rect x="44" y="102" width="24" height="24" rx="4" fill="#21262D"><title>2026-04-21: 0</title></rect>
 <rect x="44" y="130" width="24" height="24" rx="4" fill="#21262D"><title>2026-04-22: 0</title></rect>
@@ -191,29 +192,29 @@
 <rect x="716" y="242" width="24" height="24" rx="4" fill="#ED4E26"><title>2026-10-11: 5 000</title></rect>
 <rect x="744" y="74" width="24" height="24" rx="4" fill="#FFA383"><title>2026-10-12: 11 258</title></rect>
 <rect x="744" y="102" width="24" height="24" rx="4" fill="#21262D"><title>2026-10-13: 0</title></rect>
-<text x="792" y="86" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">slov/deň</text>
+<text x="792" y="86" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">slov/deň</text>
 <rect x="792" y="96" width="14" height="14" rx="3" fill="#21262D"/>
-<text x="812" y="107.5" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">nič</text>
+<text x="812" y="107.5" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">nič</text>
 <rect x="792" y="118" width="14" height="14" rx="3" fill="#5A2616"/>
-<text x="812" y="129.5" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1–999</text>
+<text x="812" y="129.5" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1–999</text>
 <rect x="792" y="140" width="14" height="14" rx="3" fill="#A33A1B"/>
-<text x="812" y="151.5" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1 000–2 999</text>
+<text x="812" y="151.5" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">1 000–2 999</text>
 <rect x="792" y="162" width="14" height="14" rx="3" fill="#ED4E26"/>
-<text x="812" y="173.5" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">3 000–7 999</text>
+<text x="812" y="173.5" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">3 000–7 999</text>
 <rect x="792" y="184" width="14" height="14" rx="3" fill="#FFA383"/>
-<text x="812" y="195.5" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">8 000+</text>
-<text x="0" y="288" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">Okno: 549 425 slov v 148 dňoch · prázdne políčko = žiadne indexované ľudské písanie v ten deň, nie dôkaz nečinnosti</text>
-<text x="0" y="320" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">commity / týždeň</text>
+<text x="812" y="195.5" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;font-variant-numeric:tabular-nums;">8 000+</text>
+<text x="0" y="288" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">Okno: 549 425 slov v 148 dňoch · prázdne políčko = žiadne indexované ľudské písanie v ten deň, nie dôkaz nečinnosti</text>
+<text x="0" y="320" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11px;font-weight:600;">commity / týždeň</text>
 <line x1="44" y1="344.5" x2="768" y2="344.5" stroke="#3D444D" stroke-width="1"/>
-<rect x="576" y="342" width="24" height="2" rx="2" fill="#9198A1"/>
-<text x="588" y="338" fill="#9198A1" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">5</text>
-<rect x="632" y="340.6" width="24" height="3.4" rx="2" fill="#9198A1"/>
-<text x="644" y="336.6" fill="#9198A1" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">32</text>
-<rect x="660" y="324.7" width="24" height="19.3" rx="2" fill="#9198A1"/>
-<text x="672" y="320.7" fill="#9198A1" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">184</text>
-<rect x="688" y="310" width="24" height="34" rx="2" fill="#9198A1"/>
-<text x="700" y="306" fill="#9198A1" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">324</text>
-<rect x="716" y="339.5" width="24" height="4.5" rx="2" fill="#9198A1"/>
-<text x="728" y="335.5" fill="#9198A1" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">43</text>
-<text x="0" y="366" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">indexované non-merge commity v 13 repozitároch workspace, vrátane lokálnych vetiev · 2026-09-02 → 2026-10-11 · spolu 588</text>
+<rect x="576" y="342" width="24" height="2" rx="2" fill="#6DDCEB"/>
+<text x="588" y="338" fill="#A6B3C2" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">5</text>
+<rect x="632" y="340.6" width="24" height="3.4" rx="2" fill="#6DDCEB"/>
+<text x="644" y="336.6" fill="#A6B3C2" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">32</text>
+<rect x="660" y="324.7" width="24" height="19.3" rx="2" fill="#6DDCEB"/>
+<text x="672" y="320.7" fill="#A6B3C2" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">184</text>
+<rect x="688" y="310" width="24" height="34" rx="2" fill="#6DDCEB"/>
+<text x="700" y="306" fill="#A6B3C2" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">324</text>
+<rect x="716" y="339.5" width="24" height="4.5" rx="2" fill="#6DDCEB"/>
+<text x="728" y="335.5" fill="#A6B3C2" text-anchor="middle" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:10px;font-weight:400;font-variant-numeric:tabular-nums;">43</text>
+<text x="0" y="366" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:11.5px;font-weight:400;">indexované non-merge commity v 13 repozitároch workspace, vrátane lokálnych vetiev · 2026-09-02 → 2026-10-11 · spolu 588</text>
 </svg>

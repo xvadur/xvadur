@@ -1,10 +1,7 @@
 <!-- generated:board:start -->
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/en/board-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/en/board-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/en/board-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/en/board-light.svg">
-  <img alt="Measurement board for Adam Rudavský (XVADUR), snapshot 2026-10-13: 646,607 human words indexed in Korpus (2026-01-17 to 2026-10-12); 159 writing days; 588 workspace commits across 13 local repositories (2026-09-02 to 2026-10-11); Codex reports 22.4B lifetime tokens and Claude Code reports 14.4B total tokens, both from screenshots received 2026-10-11." src="assets/en/board-light.svg" width="100%">
+  <source media="(max-width: 600px)" srcset="assets/en/board-mobile-dark.svg">
+  <img alt="Measurement board for Adam Rudavský (XVADUR), snapshot 2026-10-13: 646,607 human words indexed in Korpus (2026-01-17 to 2026-10-12); 159 writing days; 588 workspace commits across 13 local repositories (2026-09-02 to 2026-10-11); Codex reports 22.4B lifetime tokens and Claude Code reports 14.4B total tokens, both from screenshots received 2026-10-11." src="assets/en/board-dark.svg" width="100%">
 </picture>
 <!-- generated:board:end -->
 
@@ -37,9 +34,7 @@ Earlier experiments include a voice reception demo, a senior-care map, personal 
 
 <!-- generated:metrics:start -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/en/calendar-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/en/calendar-light.svg">
-  <img alt="Calendar of human words written per day over 26 weeks (2026-04-20 to 2026-10-13), indexed in Korpus: 549,425 words on 148 days, plus weekly counts of indexed workspace commits since 2026-09-02." src="assets/en/calendar-light.svg" width="100%">
+  <img alt="Calendar of human words written per day over 26 weeks (2026-04-20 to 2026-10-13), indexed in Korpus: 549,425 words on 148 days, plus weekly counts of indexed workspace commits since 2026-09-02." src="assets/en/calendar-dark.svg" width="100%">
 </picture>
 
 **549,425 words across 148 indexed days** in this 26-week window (2026-04-20 → 2026-10-13). Shades: 1–999 / 1,000–2,999 / 3,000–7,999 / 8,000+ words per day. Empty cells mean no indexed entry. Lower bars show weekly workspace commits.
@@ -56,9 +51,7 @@ Earlier experiments include a voice reception demo, a senior-care map, personal 
 | Claude Code total tokens | **14.4B** | 141 sessions, 49,318 messages, 27 active days; screenshot received 2026-10-11 |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/en/sources-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/en/sources-light.svg">
-  <img alt="Human words per month in 2026 and share by source: Codex 315,164 (48.7%), Obsidian notes 171,927 (26.6%), Claude Code 95,868 (14.8%), Dia 32,615 (5.0%), ChatGPT 31,033 (4.8%)." src="assets/en/sources-light.svg" width="100%">
+  <img alt="Human words per month in 2026 and share by source: Codex 315,164 (48.7%), Obsidian notes 171,927 (26.6%), Claude Code 95,868 (14.8%), Dia 32,615 (5.0%), ChatGPT 31,033 (4.8%)." src="assets/en/sources-dark.svg" width="100%">
 </picture>
 
 By source: Codex 315,164 (48.7%); Obsidian notes 171,927 (26.6%); Claude Code 95,868 (14.8%); Dia 32,615 (5.0%); ChatGPT 31,033 (4.8%).

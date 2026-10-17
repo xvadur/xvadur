@@ -37,18 +37,20 @@ WIDTH = 920
 
 THEMES = {
     "light": {
-        "fg": "#1F2328", "muted": "#59636E", "faint": "#818B98", "rule": "#D1D9E0",
-        "panel": "#F6F8FA", "empty": "#EBEDF0", "bar": "#57606A", "bar_partial": "#AFB8C1",
+        "bg": "#FFFFFF", "fg": "#1F2328", "muted": "#526272", "faint": "#526272", "rule": "#D1D9E0",
+        "panel": "#F6F8FA", "empty": "#EBEDF0", "bar": "#087C91", "bar_partial": "#D9A268",
+        "metrics": ["#B83B19", "#7047BC", "#087C91", "#16734C", "#956214", "#AE3B88"],
         "levels": ["#F9D4C8", "#F3A184", "#ED4E26", "#9E2F13"],
-        "sources": {"codex": "#ED4E26", "obsidian": "#8E7CC3", "claude": "#C9A27E",
-                    "dia": "#6FA8DC", "chatgpt": "#74AA9C"},
+        "sources": {"codex": "#16734C", "obsidian": "#7047BC", "claude": "#956214",
+                    "dia": "#087C91", "chatgpt": "#AE3B88"},
     },
     "dark": {
-        "fg": "#E6EDF3", "muted": "#9198A1", "faint": "#6E7781", "rule": "#3D444D",
-        "panel": "#161B22", "empty": "#21262D", "bar": "#9198A1", "bar_partial": "#4B5561",
+        "bg": "#0D1117", "fg": "#E6EDF3", "muted": "#A6B3C2", "faint": "#A6B3C2", "rule": "#3D444D",
+        "panel": "#161B22", "empty": "#21262D", "bar": "#6DDCEB", "bar_partial": "#D5A252",
+        "metrics": ["#FF956E", "#C3A6FF", "#6DDCEB", "#7CE0AE", "#F6C875", "#F3A6D9"],
         "levels": ["#5A2616", "#A33A1B", "#ED4E26", "#FFA383"],
-        "sources": {"codex": "#F2673F", "obsidian": "#A594DE", "claude": "#D7B38F",
-                    "dia": "#86B8E6", "chatgpt": "#86BFB0"},
+        "sources": {"codex": "#7CE0AE", "obsidian": "#C3A6FF", "claude": "#F6C875",
+                    "dia": "#6DDCEB", "chatgpt": "#F3A6D9"},
     },
 }
 
@@ -183,7 +185,8 @@ class SVG:
             f'viewBox="0 0 {self.w} {self.h}" role="img" aria-labelledby="title desc">\n'
             f"<title id=\"title\">{escape(self.title)}</title>\n<desc id=\"desc\">{escape(self.desc)}</desc>\n"
         )
-        return head + "\n".join(self.parts) + "\n</svg>\n"
+        ground = f'<rect width="{self.w}" height="{self.h}" fill="{self.theme["bg"]}"/>'
+        return head + ground + "\n" + "\n".join(self.parts) + "\n</svg>\n"
 
 
 # ---------------------------------------------------------------- derived values
@@ -234,7 +237,7 @@ def render_board(data: dict, dv: dict, lang: str, theme_name: str) -> str:
     s.text(WIDTH, 104, T["snapshot"].format(as_of=data["as_of"], tz=data["timezone"]), size=12,
            fill=th["muted"], anchor="end", tabular=True)
     # title
-    s.text(0, 46, T["board_title"], size=38, weight=700, ls=-0.6)
+    s.text(0, 46, T["board_title"], size=38, weight=700, fill=th["metrics"][0], ls=-0.6)
     s.text(0, 72, T["board_sub"], size=14, fill=th["muted"])
     # metric strip
     top, bottom = 128, 246
@@ -258,7 +261,7 @@ def render_board(data: dict, dv: dict, lang: str, theme_name: str) -> str:
         if i:
             s.line(x, top + 14, x, bottom - 14, th["rule"])
         px = x + (0 if i == 0 else 16)
-        s.text(px, top + 46, num, size=30, weight=700, fill=color, tabular=True, ls=-0.5)
+        s.text(px, top + 46, num, size=30, weight=700, fill=th["metrics"][i], tabular=True, ls=-0.5)
         s.text(px, top + 68, label, size=12.5, weight=600)
         for k, part in enumerate(scope.split(" · ")):
             s.text(px, top + 86 + k * 15, part, size=11, fill=th["muted"], tabular=True)
@@ -380,7 +383,7 @@ def render_sources(data: dict, dv: dict, lang: str, theme_name: str) -> str:
         x = i * slot + (slot - bw) / 2
         h = chart_h * v / maxv
         partial = (m == last_month and c["last_day"] != _month_end(m))
-        s.rect(x, base - h, bw, h, th["bar_partial"] if partial else th["bar"], rx=3)
+        s.rect(x, base - h, bw, h, th["bar_partial"] if partial else th["metrics"][0], rx=3)
         label = fmt_int(v, lang)
         s.text(x + bw / 2, base - h - 6, label, size=11, fill=th["fg"], anchor="middle", tabular=True)
         s.text(x + bw / 2, base + 16, T["months"][int(m[5:]) - 1], size=12, fill=th["muted"], anchor="middle")
@@ -428,7 +431,7 @@ def render_mobile_board(data: dict, dv: dict, lang: str, theme_name: str) -> str
         as_of=data["as_of"], words=fmt_int(c["words"], lang), first=c["first_day"], last=c["last_day"],
         days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
         glast=g["last_day"], codex=cx["display"], claude=cl["display"], recv=cx["received_on"]), th)
-    s.text(12, 44, T["board_title"], size=34, weight=700, ls=-0.6)
+    s.text(12, 44, T["board_title"], size=34, weight=700, fill=th["metrics"][0], ls=-0.6)
     subtitle = "Websites · agents · research" if lang == "en" else "Weby · agenti · výskum"
     s.text(12, 76, subtitle, size=18, fill=th["muted"])
     s.text(12, 104, data["as_of"] + " · Europe/Bratislava", size=15, fill=th["muted"])
@@ -450,7 +453,7 @@ def render_mobile_board(data: dict, dv: dict, lang: str, theme_name: str) -> str
     for i, (num, (label, scope)) in enumerate(zip(nums, labels)):
         x = 12 + (i % 2) * 210
         y = 167 + (i // 2) * 119
-        s.text(x, y, num, size=34, weight=700, fill=ORANGE if i == 0 else th["fg"], tabular=True)
+        s.text(x, y, num, size=34, weight=700, fill=th["metrics"][i], tabular=True)
         s.text(x, y + 28, label, size=17, weight=600)
         s.text(x, y + 51, scope, size=15, fill=th["muted"])
     s.line(12, 492, 408, 492, th["rule"])
@@ -461,16 +464,13 @@ def render_mobile_board(data: dict, dv: dict, lang: str, theme_name: str) -> str
 def picture(lang: str, name: str, alt: str) -> str:
     base = f"assets/{lang}/{name}"
     mobile = (
-        f'  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="{base}-mobile-dark.svg">\n'
-        f'  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="{base}-mobile-light.svg">\n'
+        f'  <source media="(max-width: 600px)" srcset="{base}-mobile-dark.svg">\n'
     ) if name == "board" else ""
     return (
         "<picture>\n"
         + mobile
         +
-        f'  <source media="(prefers-color-scheme: dark)" srcset="{base}-dark.svg">\n'
-        f'  <source media="(prefers-color-scheme: light)" srcset="{base}-light.svg">\n'
-        f'  <img alt="{escape(alt, {chr(34): "&quot;"})}" src="{base}-light.svg" width="100%">\n'
+        f'  <img alt="{escape(alt, {chr(34): "&quot;"})}" src="{base}-dark.svg" width="100%">\n'
         "</picture>"
     )
 

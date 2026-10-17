@@ -1,33 +1,46 @@
 # Design
 
-Native GitHub profile README for Adam Rudavský / XVADUR. GitHub owns the typography, navigation, links and reading surface. The profile adds Adam's existing wordmark, actual work and a personal voice.
+Native GitHub profile README for github.com/xvadur. GitHub owns the frame, typography and colour system; this repository adds a measured record, responsive SVGs and plain Markdown with links to actual work.
 
-## Reading order
+## Direction
 
-The orange XVADUR signature leads into an introduction to Adam, his route from healthcare to building with AI, and his own Minecraft analogy. Two pairs of real project images show Hriech, Korpus, Jakub and Lucia. Each project's description uses the full reading width: phones must not squeeze prose into parallel table columns. Writing and the question behind the work follow the projects. A compact dated measurement section comes near the end, before the invitation to make contact.
+Thesis from the brief: Adam's measured practice, connected to the systems it creates. The page leads with a title and measurement board, then the person, five distinct projects, the writing calendar and the working method. Exact figures and the monthly/source charts are in an expandable details block. Sources and definitions are linked.
 
-The main README is English; README.sk.md carries the same structure in Slovak. The English Minecraft quotation is a translation of the Slovak original on Adam's website.
+## Constraints that shaped it
 
-## Identity
+- **Numbers come from one frozen file.** Every figure in images and Markdown is rendered from `data/profile.json` by `scripts/render_profile.py`. The README keeps its numbers inside `<!-- generated:… -->` blocks so a refresh cannot leave stale prose behind.
+- **Provider boundaries are visible.** Codex and Claude Code tokens sit in separate cells with their own scope lines. There is no grand total anywhere.
+- **Calendar is writing, not tokens.** The 26-week grid shows human words per day from Korpus (05:00 day boundary, Europe/Bratislava). Fixed level thresholds, month labels, legend, window total and an explicit "empty ≠ idle" note. A weekly commits row sits under the same columns so the two timelines can be read together without being confused.
+- **Self-contained SVG.** No scripts, fonts, external images, `foreignObject` or links. System font stack matches GitHub's UI so the images sit in its typographic world. Tabular numerals for all measurements. Transparent background; light and dark variants are selected with `<picture>` and `prefers-color-scheme`, and the `<img>` fallback is the light file.
+- **Accessibility and mobile.** Each SVG has `<title>`, `<desc>` and a descriptive `alt`. The board changes to a 420-pixel, two-column composition below 600 pixels. Exact figures and source shares remain available in native Markdown inside the details block. The calendar and source chart are dense overviews; their data and definitions are linked.
+- **Honest project state.** Public site, prototype, private, in development. No "live" claims without a public URL, no publish counts, no client outcomes.
 
-The banner uses the existing geometric XVADUR wordmark on #ED4E26. The ink is #101C20. It is a self-contained SVG with outlined letters, an explicit background, a title, description and an equivalent HTML alt. It works independently of GitHub's or the operating system's theme.
+## Palette
 
-Project images retain their own palettes and original pixels. They are previews, linked to the work, not background decoration. Asset sources and historical-interface caveats are recorded in assets/work/README.md. No new illustration or portrait was generated.
+| Role | Light | Dark |
+|---|---|---|
+| Accent (XVADUR) | `#ED4E26` | `#ED4E26` / `#F2673F` |
+| Text | `#1F2328` | `#E6EDF3` |
+| Muted | `#59636E` | `#9198A1` |
+| Rules | `#D1D9E0` | `#3D444D` |
+| Empty cell | `#EBEDF0` | `#21262D` |
+| Calendar levels | `#F9D4C8 → #F3A184 → #ED4E26 → #9E2F13` | `#5A2616 → #A33A1B → #ED4E26 → #FFA383` |
+| Commits / monthly bars | `#57606A` | `#9198A1` |
+| Sources | Codex orange, Obsidian `#8E7CC3`, Claude `#C9A27E`, Dia `#6FA8DC`, ChatGPT `#74AA9C` | lightened equivalents |
 
-## Native layout and accessibility
+Orange marks the primary writing measurement and the writing calendar. Graphite carries the other counts. Source colours encode the source shares.
 
-Project previews are paired at 49% width. Their descriptions sit below, across the full content width, in semantic headings and paragraphs. This is deliberately native Markdown and supported HTML: no custom CSS, JavaScript, nested app interface or external statistics service.
+## Files
 
-Each image has a descriptive alt. Work status is written beside its link: public publication, private lab, wider system in development, or booking demonstration. The contact invitation and writing link are ordinary keyboard-accessible links. The page follows GitHub's own text, focus and contrast behavior.
+- `README.md`, `README.sk.md` – English main and Slovak alternate, same structure, cross-linked.
+- `assets/en/`, `assets/sk/` – desktop board, mobile board, calendar and sources × light/dark (16 generated SVGs).
+- `assets/evidence/` – two unchanged user-supplied screenshots with a provenance README.
+- `data/profile.json` – frozen aggregates; the only input to the renderer.
+- `docs/methodology.md` – definitions, scopes, exclusions, evidence links, reproduction.
+- `scripts/export_corpus.py`, `scripts/render_profile.py`, `scripts/build_preview.py` – stdlib tooling. `preview/` is git-ignored QA only.
 
-## Measurements
+## Known limits
 
-The profile shows one short line of counts and the frozen snapshot date. A native details element holds the writing calendar, exact counts, provider counters, source shares and methodology link. No token grand total, live-counter claim or ranking is added.
-
-The frozen source remains data/profile.json. scripts/render_profile.py owns the generated metrics block in both languages. Sixteen legacy board/calendar/source SVGs remain reproducible supporting assets. The opening board no longer appears in the README.
-
-Every generated SVG now has an explicit white or #0D1117 ground. This prevents unreadable dark text on GitHub's dark background when GitHub's selected theme differs from the operating-system preference used by picture media queries.
-
-## Verification boundary
-
-scripts/build_preview.py provides a labelled approximation for local inspection in both languages and themes. Native GitHub is the final renderer. Check the published profile after updating the repository, including its narrow viewport and expanded measurement notebook. The frozen aggregate is dated 2026-10-13 and is not presented as a live 2026-10-17 total.
+- The local preview approximates GitHub's Markdown and cannot emulate `prefers-color-scheme`; it rewrites image sources per page instead. Final rendering must be checked on github.com in both themes.
+- SVG text widths depend on the viewer's system font; layouts leave slack but very different fonts could tighten the board's scope lines.
+- The calendar window is 26 weeks because the corpus is dense only from April 2026; a 52-week grid would be mostly empty for coverage reasons and would read as idleness.

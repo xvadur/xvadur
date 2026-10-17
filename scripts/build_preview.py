@@ -37,9 +37,8 @@ article pre{background:var(--code);padding:16px;border-radius:6px;overflow:auto;
 article code{background:var(--code);padding:.2em .4em;border-radius:6px;font:85% ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 article table{border-collapse:collapse;display:block;overflow:auto;width:max-content;max-width:100%}
 article th,article td{border:1px solid var(--border);padding:6px 13px}article th{font-weight:600}article tr:nth-child(2n) td{background:var(--code)}
-article img{max-width:100%;height:auto;vertical-align:top}article picture{display:block;margin:0 0 16px}
+article img{max-width:100%;height:auto;display:block}article picture{display:block;margin:0 0 16px}
 article ul{padding-left:2em}article li{margin:.25em 0}
-article blockquote{margin:0 0 16px;padding:0 1em;color:var(--muted);border-left:.25em solid var(--border)}article blockquote p:last-child{margin:0}
 @media (max-width:900px){.page{grid-template-columns:minmax(0,1fr);padding:16px}.side{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.side .avatar{width:64px;height:64px;flex-shrink:0}.side h2{font-size:22px}.side .handle{font-size:16px}article{padding:16px}}
 """
 
@@ -89,14 +88,6 @@ def render_markdown(md: str, theme: str) -> str:
             while i < len(lines) and "-->" not in lines[i]:
                 i += 1
             i += 1; continue
-        if stripped.startswith(">"):
-            flush_para()
-            block = []
-            while i < len(lines) and lines[i].lstrip().startswith(">"):
-                block.append(re.sub(r"^\s*>\s?", "", lines[i])); i += 1
-            paragraphs = "\n".join(block).split("\n\n")
-            out.append("<blockquote>" + "".join("<p>" + inline(p) + "</p>" for p in paragraphs) + "</blockquote>")
-            continue
         if stripped.startswith("<"):  # raw HTML block until blank line
             flush_para()
             block = []

@@ -8,7 +8,7 @@ GitHub profile README (web), hosted at github.com/xvadur/xvadur and shown on git
 
 ## Purpose
 
-Introduce Adam as a person and author through his voice, his route from healthcare into building with AI, and a curated selection of real work. The user rejected a measurement dashboard as the opening: numbers belong inside his story, after the person and the artifacts. The GitHub README should make a reader curious enough to open a project, read a text or make contact.
+Adam requested a profile that reflects his extensive work and his habit of measuring his own activity. The supplied references show an AI usage summary, token activity calendar and personal showcase. The profile should connect measurements to actual work and its sources.
 
 ## Users
 
@@ -28,4 +28,4 @@ The main README is English and links to a complete Slovak version. User conversa
 
 ## Success
 
-A reader first meets Adam, sees actual projects and understands what connects them. Work, writing and contact links are easy to follow. Measurement remains compact and dated, with the charts, provider counters and methodology available on demand. Native GitHub rendering and phone readability take priority over a simulated standalone website.
+A reader can see who Adam is, the breadth of his work and what the numbers measure, and can follow real links. The profile renders correctly in GitHub light and dark modes and remains understandable on a phone. A repeatable local export and renderer keep future snapshots maintainable.

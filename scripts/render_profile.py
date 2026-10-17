@@ -183,10 +183,7 @@ class SVG:
             f'viewBox="0 0 {self.w} {self.h}" role="img" aria-labelledby="title desc">\n'
             f"<title id=\"title\">{escape(self.title)}</title>\n<desc id=\"desc\">{escape(self.desc)}</desc>\n"
         )
-        # GitHub's theme can differ from the operating-system preference used
-        # by picture media queries. An explicit ground keeps either readable.
-        ground = "#0D1117" if self.theme is THEMES["dark"] else "#FFFFFF"
-        return head + f'<rect width="{self.w}" height="{self.h}" fill="{ground}"/>\n' + "\n".join(self.parts) + "\n</svg>\n"
+        return head + "\n".join(self.parts) + "\n</svg>\n"
 
 
 # ---------------------------------------------------------------- derived values
@@ -533,20 +530,7 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
                    f"({dv['start'].isoformat()} → {dv['as_of'].isoformat()}). "
                    "Odtiene: 1–999 / 1 000–2 999 / 3 000–7 999 / 8 000+ slov za deň. "
                    "Prázdne políčko znamená chýbajúci záznam. Spodné stĺpce ukazujú týždenné commity.")
-    if lang == "en":
-        headline = (f"**{f(c['words'])} of my own words indexed · {c['active_days']} writing days · "
-                    f"{g['commits']} workspace commits**")
-        scope = (f"Frozen snapshot: **{data['as_of']}**. Partial 2026 writing index; "
-                 f"commits from {g['repositories']} local repositories, {g['first_day']} → {g['last_day']}.")
-        summary = "Open the notebook: writing rhythm, AI usage and sources"
-    else:
-        headline = (f"**{f(c['words'])} vlastných slov v indexe · {c['active_days']} dní s písaním · "
-                    f"{g['commits']} commitov vo workspace**")
-        scope = (f"Uzavretá snímka: **{data['as_of']}**. Čiastočný index písania za rok 2026; "
-                 f"commity z {g['repositories']} lokálnych repozitárov, {g['first_day']} → {g['last_day']}.")
-        summary = "Otvor zápisník: rytmus písania, používanie AI a zdroje"
-    detail = "\n\n".join([picture(lang, "calendar", alt_cal), caption, detail])
-    return headline + "\n\n" + scope + "\n\n<details>\n<summary>" + summary + "</summary>\n\n" + detail + "\n\n</details>"
+    return picture(lang, "calendar", alt_cal) + "\n\n" + caption + "\n\n<details>\n<summary>" + summary + "</summary>\n\n" + detail + "\n\n</details>"
 
 
 def snapshot_block(data: dict, lang: str) -> str:
@@ -586,11 +570,9 @@ def outputs(data: dict) -> dict[Path, str]:
                 days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
                 glast=g["last_day"], codex=dv["codex"]["display"], claude=dv["claude"]["display"],
                 recv=dv["codex"]["received_on"])
-            if "<!-- generated:board:start -->" in text:
-                text = replace_block(text, "board", picture(lang, "board", alt_board))
+            text = replace_block(text, "board", picture(lang, "board", alt_board))
             text = replace_block(text, "metrics", metrics_block(data, dv, lang))
-            if "<!-- generated:snapshot:start -->" in text:
-                text = replace_block(text, "snapshot", snapshot_block(data, lang))
+            text = replace_block(text, "snapshot", snapshot_block(data, lang))
             out[readme] = text
     return out
 

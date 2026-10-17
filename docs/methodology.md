@@ -64,7 +64,7 @@ python3 scripts/render_profile.py --check
 ```
 
 - `export_corpus.py` opens the database read-only, runs every query inside one read transaction, and writes only the whitelisted aggregates listed in its header. Without `--write` it prints to stdout and changes nothing. Only known public fields of provider snapshots are preserved from the existing file; the token figures are never recomputed.
-- `render_profile.py` regenerates sixteen SVGs (English/Slovak × desktop board, mobile board, calendar, sources × light/dark) and rewrites the marked blocks in `README.md` and `README.sk.md`. `--check` exits non-zero if anything is stale.
+- `render_profile.py` regenerates sixteen SVGs (English/Slovak × desktop board, mobile board, calendar, sources × light/dark) and rewrites the marked measurement block in both READMEs. The opening boards are retained as supporting assets; the profile leads with the person and work. Optional legacy board/snapshot blocks are updated when present. `--check` exits non-zero if anything is stale.
 - `build_preview.py` writes an ignored local `preview/` for inspection. It approximates GitHub and is not the target renderer.
 
 Nothing runs on a schedule. A new snapshot is a deliberate, dated act.

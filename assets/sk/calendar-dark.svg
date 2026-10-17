@@ -2,6 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="372" viewBox="0 0 920 372" role="img" aria-labelledby="title desc">
 <title id="title">Kalendár písania · ľudské slová za deň, indexované v Korpuse</title>
 <desc id="desc">Kalendár ľudských slov napísaných za deň počas 26 týždňov (2026-04-20 až 2026-10-13), indexovaných v Korpuse: 549 425 slov v 148 dňoch, plus týždenné počty indexovaných commitov vo workspace od 2026-09-02.</desc>
+<rect width="920" height="372" fill="#0D1117"/>
 <text x="0" y="20" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:600;">Kalendár písania · ľudské slová za deň, indexované v Korpuse</text>
 <text x="920" y="20" fill="#9198A1" text-anchor="end" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;font-variant-numeric:tabular-nums;">26 týždňov · 2026-04-20 → 2026-10-13</text>
 <text x="72" y="62" fill="#9198A1" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">máj</text>

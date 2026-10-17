@@ -1,41 +1,65 @@
-<!-- generated:board:start -->
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/en/board-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/en/board-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/en/board-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/en/board-light.svg">
-  <img alt="Measurement board for Adam Rudavský (XVADUR), snapshot 2026-10-13: 646,607 human words indexed in Korpus (2026-01-17 to 2026-10-12); 159 writing days; 588 workspace commits across 13 local repositories (2026-09-02 to 2026-10-11); Codex reports 22.4B lifetime tokens and Claude Code reports 14.4B total tokens, both from screenshots received 2026-10-11." src="assets/en/board-light.svg" width="100%">
-</picture>
-<!-- generated:board:end -->
+<a href="https://xvadur.com"><img src="assets/identity.svg" alt="XVADUR — Adam Rudavský" width="100%"></a>
 
-I worked in healthcare from 2017 to 2025. Since January 2025, I have worked with AI every day. Today I build websites, agent workflows and research systems, and write.
+# I'm Adam. I write, research and build.
 
-My work spans client operations, public-source research, personal analytics and video production. I measure my practice: the writing, the tools, the changes and the systems that come out of it.
+I'm Adam Rudavský, from Bratislava. I worked in healthcare from 2017 to 2025. Daily work with AI opened a door to building software, often by thinking out loud in Slovak.
 
-[Website](https://xvadur.com) · [Private Lab](https://adam.xvadur.com) · [adam@xvadur.com](mailto:adam@xvadur.com) · [Slovensky](README.sk.md)
+I build under **XVADUR**. When I want to understand something, I tend to build a tool for it. My writing became **Korpus**. Questions about Slovak media became **Hriech / Netopier**. Client work became websites, workflows and video.
 
-## Systems I build
+**[My website](https://xvadur.com)** · [Writing, in Slovak](https://xvadur.com/texty/) · [Say hello](mailto:adam@xvadur.com) · [Slovensky](README.sk.md)
 
-**Korpus — my own practice, made visible.**
-A writing lab for words, prompts, notes, sessions, language and Git activity. Selected sources feed SQLite; an Astro + React interface lets me explore the record. It runs privately at [adam.xvadur.com](https://adam.xvadur.com), behind Cloudflare Access. This profile uses its aggregate exports.
+> “AI is a sandbox, like Minecraft. The same game is completely different in two people's hands.”
 
-**Hriech / Netopier — research with a source trail.**
-Slovak media and public-record research: collect documents, preserve their origins, examine claims and compare them over time. The publication and research engine are ongoing work, with the backend inside the [Hriech repository](https://github.com/xvadur/hriech).
+## A few things from my world
 
-**Jakub Olša — a website connected to the work.**
-A real-estate site and a wider system for property listings, viewing requests, CRM and agent workflows. [jakubolsa.sk](https://jakubolsa.sk) is public. The wider booking and CRM project continues. Built with Astro, Supabase and Cloudflare Workers.
+<p>
+<a href="https://hriech.xvadur.com"><img src="assets/work/hriech.webp" alt="Hriech: a Slovak publication with a map of media ownership, publishers and editorial teams" width="49%"></a>
+<a href="https://adam.xvadur.com"><img src="assets/work/korpus.webp" alt="Korpus: my writing lab, with a daily word count, writing rhythm and progress over a day; interface snapshot from September 2026" width="49%"></a>
+</p>
 
-**Lucia / Pičung — publishing for a therapist.**
-An Astro + Keystatic website and editorial prototype, so Lucia can manage her own content. The project is in development; the reservation flow is still a demonstration. More of my client work is on [xvadur.com](https://xvadur.com).
+<h3><a href="https://hriech.xvadur.com">Hriech / Netopier</a></h3>
+<p>I want to know where a public claim comes from. Hriech is my publication and map of Slovak media; Netopier is the research engine behind it. Documents, transcripts, connections and a trail back to the source.</p>
+<p><a href="https://hriech.xvadur.com">Explore the publication →</a><br><sub>Public publication · research engine in development</sub></p>
 
-**Content engine — Fiki / Boris.**
-Long recordings become source-led short videos: transcription, claim selection, meaning edit, captions and motion, then export for an account and date. Local MLX Whisper, Remotion and reusable client configuration support the craft. I publish the finished clips manually.
+<h3>Korpus</h3>
+<p>I wanted to see what my days actually contain. So I built a lab for my own words, prompts, notes and Git activity. Writing became something I could explore: its rhythm, language and history.</p>
+<p><a href="#yes-i-measure-it">A small public snapshot ↓</a><br><sub>Private lab · selected aggregates shared below</sub></p>
 
-Earlier experiments include a voice reception demo, a senior-care map, personal health-data tools and knowledge systems. Writing in Obsidian remains part of the same practice.
+<p>
+<a href="https://jakubolsa.sk"><img src="assets/work/jakub.webp" alt="Jakub Olša's real-estate website, built around his own voice and way of working" width="49%"></a>
+<a href="https://picung.xvadur.com"><img src="assets/work/lucia.webp" alt="Lucia's Terapia pičungom website and its conversation-based booking prototype" width="49%"></a>
+</p>
 
-## Measured practice
+<h3><a href="https://jakubolsa.sk">Jakub, a real-estate agent</a></h3>
+<p>A website built around the person doing the work. Alongside it, I'm developing the wider system for listings, enquiries, CRM and agent workflows.</p>
+<p><a href="https://jakubolsa.sk">Visit the website →</a><br><sub>Public website · wider system in development</sub></p>
+
+<h3><a href="https://picung.xvadur.com">Lucia / Terapia pičungom</a></h3>
+<p>A website with its own voice, a publishing workflow and a booking prototype. A very different person, so a very different website.</p>
+<p><a href="https://picung.xvadur.com">See the project →</a><br><sub>Website and editorial prototype · booking is a demo</sub></p>
+
+I also build **video workflows**: long recordings → transcripts → a meaningful edit → captions and motion → short videos. Local Whisper, Python and Remotion are part of that workshop.
+
+## What stays after I close the chat?
+
+That question runs through my work. I want a thought to become a useful tool, a published text or something another person can use. I work across the content, interface, data and automation, then inspect what came out.
+
+I write about that process too: **[Čo zostane, keď zavriem chat](https://xvadur.com/texty/co-zostane-ked-zavriem-chat/)** — how I got from conversations with AI to systems I can return to the next day. In Slovak, like most of my thinking.
+
+My workshop: **Astro · React / TypeScript · Python · SQLite · Cloudflare · Supabase · Remotion**, with Codex and Claude Code beside me.
+
+## Yes, I measure it.
+
+I got curious enough about my own working habits to build a whole system for them. This is a small, dated slice of that record.
 
 <!-- generated:metrics:start -->
+**646,607 of my own words indexed · 159 writing days · 588 workspace commits**
+
+Frozen snapshot: **2026-10-13**. Partial 2026 writing index; commits from 13 local repositories, 2026-09-02 → 2026-10-11.
+
+<details>
+<summary>Open the notebook: writing rhythm, AI usage and sources</summary>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/en/calendar-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/en/calendar-light.svg">
@@ -43,9 +67,6 @@ Earlier experiments include a voice reception demo, a senior-care map, personal 
 </picture>
 
 **549,425 words across 148 indexed days** in this 26-week window (2026-04-20 → 2026-10-13). Shades: 1–999 / 1,000–2,999 / 3,000–7,999 / 8,000+ words per day. Empty cells mean no indexed entry. Lower bars show weekly workspace commits.
-
-<details>
-<summary>Exact figures, monthly trend and sources</summary>
 
 | Measure | Value | Scope |
 |---|---:|---|
@@ -68,14 +89,8 @@ Snapshot `2026-10-13`. Token counts are two separate provider counters with diff
 </details>
 <!-- generated:metrics:end -->
 
-## How I work
+---
 
-Start with the real task and its sources. Write the specification, build with Codex and Claude Code, inspect the result, and keep a record of what changed. I work across the whole system: content, interface, data, automation and deployment.
+**Have something worth figuring out or building?** [Tell me about it.](mailto:adam@xvadur.com)
 
-Astro · React / TypeScript · Python · SQLite · Cloudflare Workers · Supabase · Remotion · Codex + Claude Code.
-
-[Measurement definitions and evidence](docs/methodology.md) · [Aggregate data](data/profile.json)
-
-<!-- generated:snapshot:start -->
-Snapshot `2026-10-13` (Europe/Bratislava), Korpus last ingest `2026-10-13T07:20:32.666Z`. Generated from [data/profile.json](data/profile.json) by `scripts/render_profile.py`.
-<!-- generated:snapshot:end -->
+[xvadur.com](https://xvadur.com) · Bratislava, Slovakia

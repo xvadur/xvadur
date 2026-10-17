@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="548" viewBox="0 0 420 548" role="img" aria-labelledby="title desc">
 <title id="title">Adam Rudavský</title>
-<desc id="desc">Measurement board for Adam Rudavský (XVADUR), snapshot 2026-10-13: 646,607 human words indexed in Korpus (2026-01-17 to 2026-10-12); 159 writing days; 588 workspace commits across 13 local repositories (2026-09-02 to 2026-10-11); Codex reports 22.4B lifetime tokens and Claude Code reports 14.4B total tokens, both from screenshots received 2026-10-11.</desc>
+<desc id="desc">Measurement board for Adam Rudavský (XVADUR): approximately 2.4M own words archived in Core V2, 2017–2026, through 2026-10-14; automatic classification gives 2,409,914 words after matching archive copies. Separately, Korpus indexes 646,607 human words (2026-01-17 to 2026-10-12) across 159 writing days, snapshot 2026-10-13; 588 workspace commits across 13 local repositories (2026-09-02 to 2026-10-11); Codex reports 22.4B lifetime tokens and Claude Code reports 14.4B total tokens, from screenshots received 2026-10-11.</desc>
 <rect width="420" height="548" fill="#0D1117"/>
 <text x="12" y="44" fill="#FF956E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:34px;font-weight:700;letter-spacing:-0.6px;">Adam Rudavský</text>
 <text x="12" y="76" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;">Websites · agents · research</text>
-<text x="12" y="104" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">2026-10-13 · Europe/Bratislava</text>
+<text x="12" y="104" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;">Core V2 2026-10-14 · Korpus 2026-10-13</text>
 <line x1="12" y1="121" x2="408" y2="121" stroke="#3D444D" stroke-width="1"/>
-<text x="12" y="167" fill="#FF956E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;">646,607</text>
-<text x="12" y="195" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:17px;font-weight:600;">Words in Korpus</text>
-<text x="12" y="218" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">human origin</text>
+<text x="12" y="167" fill="#FF956E" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;">≈2.4M</text>
+<text x="12" y="195" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:17px;font-weight:600;">Own words archived</text>
+<text x="12" y="218" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">V2 estimate · 2017–2026</text>
 <text x="222" y="167" fill="#C3A6FF" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;">159</text>
 <text x="222" y="195" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:17px;font-weight:600;">Writing days</text>
-<text x="222" y="218" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">indexed days</text>
+<text x="222" y="218" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">Korpus 2026 · 05:00</text>
 <text x="12" y="286" fill="#6DDCEB" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;">588</text>
 <text x="12" y="314" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:17px;font-weight:600;">Workspace commits</text>
 <text x="12" y="337" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">13 local repositories</text>
@@ -26,5 +26,5 @@
 <text x="222" y="433" fill="#E6EDF3" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:17px;font-weight:600;">Corpus entries</text>
 <text x="222" y="456" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:15px;font-weight:400;">prompts + notes</text>
 <line x1="12" y1="492" x2="408" y2="492" stroke="#3D444D" stroke-width="1"/>
-<text x="12" y="522" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;">Partial corpus · separate tool counters</text>
+<text x="12" y="522" fill="#A6B3C2" text-anchor="start" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;">V2 estimate · Korpus daily index</text>
 </svg>

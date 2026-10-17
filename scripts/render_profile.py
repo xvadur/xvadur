@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the profile's generated artifacts from data/profile.json.
+"""Render the profile from the separate Korpus and Core V2 aggregate snapshots.
 
 Deterministic, standard library only. Produces:
 
@@ -24,9 +24,11 @@ import json
 import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
+from export_v2_words import validate_public
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "profile.json"
+V2_DATA = ROOT / "data" / "v2-writing.json"
 ASSETS = ROOT / "assets"
 
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif"
@@ -61,11 +63,11 @@ TEXT = {
         "board_kicker": "XVADUR · measured record",
         "board_title": "Adam Rudavský",
         "board_sub": "Websites, agent workflows and research systems. Healthcare 2017–2025, daily AI work since January 2025.",
-        "snapshot": "snapshot {as_of} · {tz}",
-        "m_words": "human words indexed",
-        "m_words_scope": "Korpus · {first} → {last}",
-        "m_days": "writing days indexed",
-        "m_days_scope": "{entries} entries · 05:00 day boundary",
+        "snapshot": "Core V2 {through} · Korpus {as_of} · {tz}",
+        "m_words": "own words archived",
+        "m_words_scope": "Core V2, {first}–{last} · classification estimate",
+        "m_days": "Korpus writing days",
+        "m_days_scope": "{entries} entries · 2026 index, 05:00 boundary",
         "m_commits": "workspace commits",
         "m_commits_scope": "{repos} local repos · {first} → {last}",
         "m_codex": "Codex lifetime tokens",
@@ -73,7 +75,7 @@ TEXT = {
         "m_claude": "Claude Code total tokens",
         "m_claude_scope": "{sessions} sessions, {days} active days · received {recv}",
         "board_foot1": "Provider-reported token usage: two separate counters. Screenshots do not disclose the input, output or cache breakdown.",
-        "board_foot2": "Words are human-origin text classified in Korpus; machine, pasted and repeat origins are excluded. Partial 2026 index, not a lifetime total.",
+        "board_foot2": "Own words: V2 classification estimate, 2017–2026. Days and charts: partial Korpus index. Definitions and scope linked below.",
         "cal_title": "Writing calendar · human words per day, indexed in Korpus",
         "cal_range": "{weeks} weeks · {start} → {end}",
         "cal_window": "Window: {words} words on {days} days · empty cell = no indexed human writing that day, not proof of no work",
@@ -88,7 +90,7 @@ TEXT = {
         "src_shares": "Share by source · {total} words",
         "src_names": {"codex": "Codex", "claude": "Claude Code", "chatgpt": "ChatGPT", "dia": "Dia", "obsidian": "Obsidian notes"},
         "src_note": "Entries: {entries} human prompts and notes, {days} days. Percentages are shares of the same {total}-word total.",
-        "alt_board": "Measurement board for Adam Rudavský (XVADUR), snapshot {as_of}: {words} human words indexed in Korpus ({first} to {last}); {days} writing days; {commits} workspace commits across {repos} local repositories ({gfirst} to {glast}); Codex reports {codex} lifetime tokens and Claude Code reports {claude} total tokens, both from screenshots received {recv}.",
+        "alt_board": "Measurement board for Adam Rudavský (XVADUR): approximately {own_display} own words archived in Core V2, {years}, through {through}; automatic classification gives {own_words} words after matching archive copies. Separately, Korpus indexes {words} human words ({first} to {last}) across {days} writing days, snapshot {as_of}; {commits} workspace commits across {repos} local repositories ({gfirst} to {glast}); Codex reports {codex} lifetime tokens and Claude Code reports {claude} total tokens, from screenshots received {recv}.",
         "alt_calendar": "Calendar of human words written per day over {weeks} weeks ({start} to {end}), indexed in Korpus: {wwords} words on {wdays} days, plus weekly counts of indexed workspace commits since {gfirst}.",
         "alt_sources": "Human words per month in 2026 and share by source: {shares}.",
     },
@@ -96,11 +98,11 @@ TEXT = {
         "board_kicker": "XVADUR · meraný záznam",
         "board_title": "Adam Rudavský",
         "board_sub": "Weby, agentské workflow a výskumné systémy. Zdravotníctvo 2017–2025, denná práca s AI od januára 2025.",
-        "snapshot": "snímka {as_of} · {tz}",
-        "m_words": "ľudských slov v indexe",
-        "m_words_scope": "Korpus · {first} → {last}",
-        "m_days": "dní s písaním v indexe",
-        "m_days_scope": "{entries} záznamov · hranica dňa 05:00",
+        "snapshot": "Core V2 {through} · Korpus {as_of} · {tz}",
+        "m_words": "vlastných slov v archíve",
+        "m_words_scope": "Core V2, {first}–{last} · odhad klasifikácie",
+        "m_days": "dní s písaním v Korpuse",
+        "m_days_scope": "{entries} záznamov · index 2026, deň od 05:00",
         "m_commits": "commitov vo workspace",
         "m_commits_scope": "{repos} lokálnych repozitárov · {first} → {last}",
         "m_codex": "Codex · lifetime tokens",
@@ -108,7 +110,7 @@ TEXT = {
         "m_claude": "Claude Code · total tokens",
         "m_claude_scope": "{sessions} sessions, {days} aktívnych dní · prijatá {recv}",
         "board_foot1": "Tokeny hlásené poskytovateľmi: dve samostatné počítadlá. Snímky neukazujú rozdelenie vstupu, výstupu a cache.",
-        "board_foot2": "Slová sú text ľudského pôvodu klasifikovaný v Korpuse; strojový, vložený a opakovaný pôvod je vylúčený. Čiastočný index 2026, nie celoživotný súčet.",
+        "board_foot2": "Vlastné slová: odhad klasifikácie V2, 2017–2026. Dni a grafy: čiastočný index Korpusu. Definície a rozsah sú pod profilom.",
         "cal_title": "Kalendár písania · ľudské slová za deň, indexované v Korpuse",
         "cal_range": "{weeks} týždňov · {start} → {end}",
         "cal_window": "Okno: {words} slov v {days} dňoch · prázdne políčko = žiadne indexované ľudské písanie v ten deň, nie dôkaz nečinnosti",
@@ -123,7 +125,7 @@ TEXT = {
         "src_shares": "Podiel podľa zdroja · {total} slov",
         "src_names": {"codex": "Codex", "claude": "Claude Code", "chatgpt": "ChatGPT", "dia": "Dia", "obsidian": "Obsidian poznámky"},
         "src_note": "Záznamy: {entries} ľudských promptov a poznámok, {days} dní. Percentá sú podiely z toho istého súčtu {total} slov.",
-        "alt_board": "Merací panel Adama Rudavského (XVADUR), snímka {as_of}: {words} ľudských slov indexovaných v Korpuse ({first} až {last}); {days} dní s písaním; {commits} commitov v {repos} lokálnych repozitároch ({gfirst} až {glast}); Codex hlási {codex} lifetime tokens a Claude Code {claude} total tokens, obe zo snímok obrazovky prijatých {recv}.",
+        "alt_board": "Merací panel Adama Rudavského (XVADUR): približne {own_display} vlastných slov v archíve Core V2, {years}, do {through}; automatická klasifikácia po spárovaní archívnych kópií dáva {own_words} slov. Samostatne Korpus indexuje {words} ľudských slov ({first} až {last}) v {days} dňoch s písaním, snímka {as_of}; {commits} commitov v {repos} lokálnych repozitároch ({gfirst} až {glast}); Codex hlási {codex} lifetime tokens a Claude Code {claude} total tokens zo snímok prijatých {recv}.",
         "alt_calendar": "Kalendár ľudských slov napísaných za deň počas {weeks} týždňov ({start} až {end}), indexovaných v Korpuse: {wwords} slov v {wdays} dňoch, plus týždenné počty indexovaných commitov vo workspace od {gfirst}.",
         "alt_sources": "Ľudské slová po mesiacoch 2026 a podiel podľa zdroja: {shares}.",
     },
@@ -135,6 +137,11 @@ TEXT = {
 def fmt_int(n: int, lang: str) -> str:
     s = f"{n:,}"
     return s if lang == "en" else s.replace(",", " ")
+
+
+def own_display(archive: dict, lang: str) -> str:
+    value = f"{archive['rounded_estimate_words'] / 1000000:.1f}"
+    return value + "M" if lang == "en" else value.replace(".", ",") + " mil."
 
 
 def pct(part: int, whole: int, lang: str) -> str:
@@ -191,7 +198,7 @@ class SVG:
 
 # ---------------------------------------------------------------- derived values
 
-def derive(data: dict) -> dict:
+def derive(data: dict, archive: dict) -> dict:
     as_of = d(data["as_of"])
     monday = as_of - dt.timedelta(days=as_of.weekday())
     start = monday - dt.timedelta(weeks=WEEKS - 1)
@@ -208,7 +215,7 @@ def derive(data: dict) -> dict:
     prov = {p["provider"]: p for p in data["provider_snapshots"]}
     sources = sorted(data["sources"], key=lambda s: -s["words"])
     return {
-        "as_of": as_of, "start": start, "monday": monday, "by_day": by_day,
+        "as_of": as_of, "start": start, "monday": monday, "by_day": by_day, "archive": archive,
         "window_words": sum(w["words"] for w in window_days), "window_days": len(window_days),
         "monthly": monthly, "weekly_commits": weekly_commits,
         "codex": prov["Codex"], "claude": prov["Claude Code"], "sources": sources,
@@ -225,16 +232,24 @@ def level(words: int) -> int:
 
 # ---------------------------------------------------------------- board
 
+def board_alt(data: dict, dv: dict, lang: str) -> str:
+    c, g, archive = data["corpus"], data["workspace_git"], dv["archive"]
+    return TEXT[lang]["alt_board"].format(
+        own_display=own_display(archive, lang), own_words=fmt_int(archive["classified_own_words"], lang),
+        years="–".join(map(str, archive["coverage_years"])), through=archive["through"],
+        as_of=data["as_of"], words=fmt_int(c["words"], lang), first=c["first_day"], last=c["last_day"],
+        days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
+        glast=g["last_day"], codex=dv["codex"]["display"], claude=dv["claude"]["display"], recv=dv["codex"]["received_on"])
+
+
 def render_board(data: dict, dv: dict, lang: str, theme_name: str) -> str:
     T, th = TEXT[lang], THEMES[theme_name]
     c, g, cx, cl = data["corpus"], data["workspace_git"], dv["codex"], dv["claude"]
-    alt = T["alt_board"].format(
-        as_of=data["as_of"], words=fmt_int(c["words"], lang), first=c["first_day"], last=c["last_day"],
-        days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
-        glast=g["last_day"], codex=cx["display"], claude=cl["display"], recv=cx["received_on"])
+    archive = dv["archive"]
+    alt = board_alt(data, dv, lang)
     H = 306
     s = SVG(WIDTH, H, T["board_title"] + " · " + T["board_kicker"], alt, th)
-    s.text(WIDTH, 104, T["snapshot"].format(as_of=data["as_of"], tz=data["timezone"]), size=12,
+    s.text(WIDTH, 104, T["snapshot"].format(as_of=data["as_of"], through=archive["through"], tz=data["timezone"]), size=12,
            fill=th["muted"], anchor="end", tabular=True)
     # title
     s.text(0, 46, T["board_title"], size=38, weight=700, fill=th["metrics"][0], ls=-0.6)
@@ -244,8 +259,8 @@ def render_board(data: dict, dv: dict, lang: str, theme_name: str) -> str:
     s.line(0, top, WIDTH, top, th["rule"])
     s.line(0, bottom, WIDTH, bottom, th["rule"])
     cells = [
-        (fmt_int(c["words"], lang), T["m_words"],
-         T["m_words_scope"].format(first=c["first_day"], last=c["last_day"]), ORANGE),
+        ("≈" + own_display(archive, lang), T["m_words"],
+         T["m_words_scope"].format(first=archive["coverage_years"][0], last=archive["coverage_years"][1]), ORANGE),
         (str(c["active_days"]), T["m_days"],
          T["m_days_scope"].format(entries=fmt_int(c["entries"], lang)), th["fg"]),
         (str(g["commits"]), T["m_commits"],
@@ -427,28 +442,26 @@ def render_mobile_board(data: dict, dv: dict, lang: str, theme_name: str) -> str
     """Recompose the measurements at phone width instead of shrinking six columns."""
     T, th = TEXT[lang], THEMES[theme_name]
     c, g, cx, cl = data["corpus"], data["workspace_git"], dv["codex"], dv["claude"]
-    s = SVG(420, 548, T["board_title"], T["alt_board"].format(
-        as_of=data["as_of"], words=fmt_int(c["words"], lang), first=c["first_day"], last=c["last_day"],
-        days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
-        glast=g["last_day"], codex=cx["display"], claude=cl["display"], recv=cx["received_on"]), th)
+    archive = dv["archive"]
+    s = SVG(420, 548, T["board_title"], board_alt(data, dv, lang), th)
     s.text(12, 44, T["board_title"], size=34, weight=700, fill=th["metrics"][0], ls=-0.6)
     subtitle = "Websites · agents · research" if lang == "en" else "Weby · agenti · výskum"
     s.text(12, 76, subtitle, size=18, fill=th["muted"])
-    s.text(12, 104, data["as_of"] + " · Europe/Bratislava", size=15, fill=th["muted"])
+    s.text(12, 104, "Core V2 " + archive["through"] + " · Korpus " + data["as_of"], size=14, fill=th["muted"])
     s.line(12, 121, 408, 121, th["rule"])
     if lang == "en":
-        labels = [("Words in Korpus", "human origin"), ("Writing days", "indexed days"),
+        labels = [("Own words archived", "V2 estimate · 2017–2026"), ("Writing days", "Korpus 2026 · 05:00"),
                   ("Workspace commits", f"{g['repositories']} local repositories"),
                   ("Codex tokens", "lifetime, reported"), ("Claude Code tokens", "total, reported"),
                   ("Corpus entries", "prompts + notes")]
-        foot = "Partial corpus · separate tool counters"
+        foot = "V2 estimate · Korpus daily index"
     else:
-        labels = [("Slová v Korpuse", "ľudský pôvod"), ("Dni s písaním", "dni v indexe"),
+        labels = [("Vlastné slová v archíve", "Odhad V2 · 2017–2026"), ("Dni s písaním", "Korpus 2026 · 05:00"),
                   ("Commity", f"{g['repositories']} lokálnych repozitárov"),
                   ("Tokeny Codex", "lifetime, hlásené"), ("Tokeny Claude Code", "total, hlásené"),
                   ("Záznamy Korpusu", "prompty + poznámky")]
-        foot = "Čiastočný korpus · samostatné počítadlá"
-    nums = [fmt_int(c["words"], lang), str(c["active_days"]), str(g["commits"]),
+        foot = "Odhad V2 · denný index Korpusu"
+    nums = ["≈" + own_display(archive, lang), str(c["active_days"]), str(g["commits"]),
             cx["display"], cl["display"], fmt_int(c["entries"], lang)]
     for i, (num, (label, scope)) in enumerate(zip(nums, labels)):
         x = 12 + (i % 2) * 210
@@ -479,6 +492,8 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
     T = TEXT[lang]
     c, g, cx, cl = data["corpus"], data["workspace_git"], dv["codex"], dv["claude"]
     f = lambda n: fmt_int(n, lang)
+    archive = dv["archive"]
+    years = "–".join(map(str, archive["coverage_years"]))
     alt_cal = T["alt_calendar"].format(weeks=WEEKS, start=dv["start"].isoformat(), end=dv["as_of"].isoformat(),
                                        wwords=f(dv["window_words"]), wdays=dv["window_days"], gfirst=g["first_day"])
     shares_txt = ", ".join(f"{T['src_names'][x['source']]} {f(x['words'])} ({pct(x['words'], c['words'], lang)})"
@@ -487,6 +502,7 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
     if lang == "en":
         rows = [
             ("Measure", "Value", "Scope"),
+            ("Own words archived · V2 estimate", f"**≈{own_display(archive, lang)}**", f"{f(archive['classified_own_words'])} words in own-labelled segments after archive-copy matching; {years}, through {archive['through']}"),
             ("Human words indexed", f"**{f(c['words'])}**", f"Korpus, {c['first_day']} → {c['last_day']}, human origin only"),
             ("Writing days indexed", f"**{c['active_days']}**", f"{f(c['entries'])} entries; day boundary 05:00 {data['timezone']}"),
             ("Workspace commits", f"**{g['commits']}**", f"{g['repositories']} local repositories, non-merge, {g['first_day']} → {g['last_day']}"),
@@ -497,12 +513,14 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
             f"{T['src_names'][x['source']]} {f(x['words'])} ({pct(x['words'], c['words'], lang)})" for x in dv["sources"]) + "."
         notes = (
             f"Snapshot `{data['as_of']}`. Token counts are two separate provider counters with different semantics "
-            f"and are not summed. The screenshots do not disclose their input/output/cache breakdown. Words are a partial 2026 index of my own "
-            f"writing, not a lifetime total. Definitions and evidence: [methodology](docs/methodology.md)."
+            f"and are not summed. The screenshots do not disclose their input/output/cache breakdown. The V2 headline estimates own-classified "
+            f"text in the available archive, including typing and dictation; it is not a count of newly composed or all lifetime words. "
+            f"The calendar and source chart use the separate {f(c['words'])}-word Korpus index. Definitions and evidence: [methodology](docs/methodology.md)."
         )
     else:
         rows = [
             ("Miera", "Hodnota", "Rozsah"),
+            ("Vlastné slová v archíve · odhad V2", f"**≈{own_display(archive, lang)}**", f"{f(archive['classified_own_words'])} slov vo vlastných úsekoch po spárovaní archívnych kópií; {years}, do {archive['through']}"),
             ("Ľudských slov v indexe", f"**{f(c['words'])}**", f"Korpus, {c['first_day']} → {c['last_day']}, iba ľudský pôvod"),
             ("Dní s indexovaným písaním", f"**{c['active_days']}**", f"{f(c['entries'])} záznamov; hranica dňa 05:00 {data['timezone']}"),
             ("Commitov vo workspace", f"**{g['commits']}**", f"{g['repositories']} lokálnych repozitárov, bez merge, {g['first_day']} → {g['last_day']}"),
@@ -513,8 +531,9 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
             f"{T['src_names'][x['source']]} {f(x['words'])} ({pct(x['words'], c['words'], lang)})" for x in dv["sources"]) + "."
         notes = (
             f"Snímka `{data['as_of']}`. Počty tokenov sú dve oddelené počítadlá poskytovateľov s rôznou sémantikou "
-            f"a nesčítavajú sa. Snímky neukazujú rozdelenie vstupu, výstupu a cache. Slová sú čiastočný index môjho písania za rok 2026, "
-            f"nie celoživotný súčet. Definície a dôkazy: [metodika](docs/methodology.md)."
+            f"a nesčítavajú sa. Snímky neukazujú rozdelenie vstupu, výstupu a cache. Hlavné číslo V2 odhaduje text označený ako vlastný "
+            f"v dostupnom archíve vrátane písania a diktovania; nemeria nanovo napísané ani všetky celoživotné slová. "
+            f"Kalendár a zdrojový graf používajú samostatný index Korpusu s {f(c['words'])} slovami. Definície a dôkazy: [metodika](docs/methodology.md)."
         )
     table = "\n".join(
         ["| " + " | ".join(rows[0]) + " |", "|---|---:|---|"] + ["| " + " | ".join(r) + " |" for r in rows[1:]])
@@ -533,12 +552,14 @@ def metrics_block(data: dict, dv: dict, lang: str) -> str:
     return picture(lang, "calendar", alt_cal) + "\n\n" + caption + "\n\n<details>\n<summary>" + summary + "</summary>\n\n" + detail + "\n\n</details>"
 
 
-def snapshot_block(data: dict, lang: str) -> str:
+def snapshot_block(data: dict, archive: dict, lang: str) -> str:
     if lang == "en":
-        return (f"Snapshot `{data['as_of']}` ({data['timezone']}), Korpus last ingest `{data['corpus_last_ingest']}`. "
-                f"Generated from [data/profile.json](data/profile.json) by `scripts/render_profile.py`.")
-    return (f"Snímka `{data['as_of']}` ({data['timezone']}), posledný ingest Korpusu `{data['corpus_last_ingest']}`. "
-            f"Vygenerované z [data/profile.json](data/profile.json) skriptom `scripts/render_profile.py`.")
+        return (f"Core V2 through `{archive['through']}`, reconciled `{archive['computed_on']}`: [own-writing aggregates](data/v2-writing.json). "
+                f"Korpus snapshot `{data['as_of']}` ({data['timezone']}), last ingest `{data['corpus_last_ingest']}`: "
+                f"[daily index](data/profile.json). Generated by `scripts/render_profile.py`.")
+    return (f"Core V2 do `{archive['through']}`, prepočítané `{archive['computed_on']}`: [agregáty vlastného textu](data/v2-writing.json). "
+            f"Snímka Korpusu `{data['as_of']}` ({data['timezone']}), posledný ingest `{data['corpus_last_ingest']}`: "
+            f"[denný index](data/profile.json). Vygenerované skriptom `scripts/render_profile.py`.")
 
 
 def replace_block(text: str, name: str, body: str) -> str:
@@ -551,8 +572,9 @@ def replace_block(text: str, name: str, body: str) -> str:
 
 # ---------------------------------------------------------------- main
 
-def outputs(data: dict) -> dict[Path, str]:
-    dv = derive(data)
+def outputs(data: dict, archive: dict) -> dict[Path, str]:
+    validate_public(archive)
+    dv = derive(data, archive)
     out: dict[Path, str] = {}
     for lang in ("en", "sk"):
         for theme in ("light", "dark"):
@@ -564,15 +586,10 @@ def outputs(data: dict) -> dict[Path, str]:
         if readme.exists():
             text = readme.read_text(encoding="utf-8")
             T = TEXT[lang]
-            c, g = data["corpus"], data["workspace_git"]
-            alt_board = T["alt_board"].format(
-                as_of=data["as_of"], words=fmt_int(c["words"], lang), first=c["first_day"], last=c["last_day"],
-                days=c["active_days"], commits=g["commits"], repos=g["repositories"], gfirst=g["first_day"],
-                glast=g["last_day"], codex=dv["codex"]["display"], claude=dv["claude"]["display"],
-                recv=dv["codex"]["received_on"])
+            alt_board = board_alt(data, dv, lang)
             text = replace_block(text, "board", picture(lang, "board", alt_board))
             text = replace_block(text, "metrics", metrics_block(data, dv, lang))
-            text = replace_block(text, "snapshot", snapshot_block(data, lang))
+            text = replace_block(text, "snapshot", snapshot_block(data, archive, lang))
             out[readme] = text
     return out
 
@@ -580,11 +597,13 @@ def outputs(data: dict) -> dict[Path, str]:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--data", type=Path, default=DATA)
+    ap.add_argument("--v2-data", type=Path, default=V2_DATA)
     ap.add_argument("--check", action="store_true", help="do not write; exit 1 if outputs differ")
     a = ap.parse_args()
     data = json.loads(a.data.read_text(encoding="utf-8"))
+    archive = json.loads(a.v2_data.read_text(encoding="utf-8"))
     changed = []
-    for path, content in outputs(data).items():
+    for path, content in outputs(data, archive).items():
         current = path.read_text(encoding="utf-8") if path.exists() else None
         if current != content:
             changed.append(path)

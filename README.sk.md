@@ -1,7 +1,7 @@
 <!-- generated:board:start -->
 <picture>
   <source media="(max-width: 600px)" srcset="assets/sk/board-mobile-dark.svg">
-  <img alt="Merací panel Adama Rudavského (XVADUR), snímka 2026-10-13: 646 607 ľudských slov indexovaných v Korpuse (2026-01-17 až 2026-10-12); 159 dní s písaním; 588 commitov v 13 lokálnych repozitároch (2026-09-02 až 2026-10-11); Codex hlási 22.4B lifetime tokens a Claude Code 14.4B total tokens, obe zo snímok obrazovky prijatých 2026-10-11." src="assets/sk/board-dark.svg" width="100%">
+  <img alt="Merací panel Adama Rudavského (XVADUR): približne 2,4 mil. vlastných slov v archíve Core V2, 2017–2026, do 2026-10-14; automatická klasifikácia po spárovaní archívnych kópií dáva 2 409 914 slov. Samostatne Korpus indexuje 646 607 ľudských slov (2026-01-17 až 2026-10-12) v 159 dňoch s písaním, snímka 2026-10-13; 588 commitov v 13 lokálnych repozitároch (2026-09-02 až 2026-10-11); Codex hlási 22.4B lifetime tokens a Claude Code 14.4B total tokens zo snímok prijatých 2026-10-11." src="assets/sk/board-dark.svg" width="100%">
 </picture>
 <!-- generated:board:end -->
 
@@ -14,7 +14,7 @@ Moja práca siaha od prevádzky klientov cez výskum verejných zdrojov a vlastn
 ## Systémy, ktoré staviam
 
 **Korpus — moja vlastná prax v číslach.**
-Lab na slová, prompty, poznámky, pracovné relácie, jazyk a Git. Vybrané zdroje sa ukladajú do SQLite; rozhranie v Astro + React umožňuje preskúmať záznam. Beží na [adam.xvadur.com](https://adam.xvadur.com) za Cloudflare Access. Tento profil používa jeho agregované exporty.
+Lab na slová, prompty, poznámky, pracovné relácie, jazyk a Git. Vybrané zdroje sa ukladajú do SQLite; rozhranie v Astro + React umožňuje preskúmať záznam. Beží na [adam.xvadur.com](https://adam.xvadur.com) za Cloudflare Access. Profil spája jeho denné agregáty so širším archívom písania Core V2.
 
 **Hriech / Netopier — výskum so stopou k zdroju.**
 Slovenské médiá a verejné záznamy: zozbierať dokumenty, zachovať ich pôvod, preskúmať tvrdenia a porovnať ich v čase. Publikácia aj výskumný stroj sa ďalej rozvíjajú; backend je súčasťou [repozitára Hriechu](https://github.com/xvadur/hriech).
@@ -44,6 +44,7 @@ Staršie experimenty zahŕňajú demo hlasovej recepcie, mapu starostlivosti o s
 
 | Miera | Hodnota | Rozsah |
 |---|---:|---|
+| Vlastné slová v archíve · odhad V2 | **≈2,4 mil.** | 2 409 914 slov vo vlastných úsekoch po spárovaní archívnych kópií; 2017–2026, do 2026-10-14 |
 | Ľudských slov v indexe | **646 607** | Korpus, 2026-01-17 → 2026-10-12, iba ľudský pôvod |
 | Dní s indexovaným písaním | **159** | 9 443 záznamov; hranica dňa 05:00 Europe/Bratislava |
 | Commitov vo workspace | **588** | 13 lokálnych repozitárov, bez merge, 2026-09-02 → 2026-10-11 |
@@ -56,7 +57,7 @@ Staršie experimenty zahŕňajú demo hlasovej recepcie, mapu starostlivosti o s
 
 Podľa zdroja: Codex 315 164 (48,7 %); Obsidian poznámky 171 927 (26,6 %); Claude Code 95 868 (14,8 %); Dia 32 615 (5,0 %); ChatGPT 31 033 (4,8 %).
 
-Snímka `2026-10-13`. Počty tokenov sú dve oddelené počítadlá poskytovateľov s rôznou sémantikou a nesčítavajú sa. Snímky neukazujú rozdelenie vstupu, výstupu a cache. Slová sú čiastočný index môjho písania za rok 2026, nie celoživotný súčet. Definície a dôkazy: [metodika](docs/methodology.md).
+Snímka `2026-10-13`. Počty tokenov sú dve oddelené počítadlá poskytovateľov s rôznou sémantikou a nesčítavajú sa. Snímky neukazujú rozdelenie vstupu, výstupu a cache. Hlavné číslo V2 odhaduje text označený ako vlastný v dostupnom archíve vrátane písania a diktovania; nemeria nanovo napísané ani všetky celoživotné slová. Kalendár a zdrojový graf používajú samostatný index Korpusu s 646 607 slovami. Definície a dôkazy: [metodika](docs/methodology.md).
 
 </details>
 <!-- generated:metrics:end -->
@@ -67,8 +68,8 @@ Začnem reálnou úlohou a jej zdrojmi. Napíšem špecifikáciu, staviam s Code
 
 Astro · React / TypeScript · Python · SQLite · Cloudflare Workers · Supabase · Remotion · Codex + Claude Code.
 
-[Definície merania a dôkazy](docs/methodology.md) · [Agregované dáta](data/profile.json)
+[Definície merania a dôkazy](docs/methodology.md) · [Vlastný text V2](data/v2-writing.json) · [Denný index Korpusu](data/profile.json)
 
 <!-- generated:snapshot:start -->
-Snímka `2026-10-13` (Europe/Bratislava), posledný ingest Korpusu `2026-10-13T07:20:32.666Z`. Vygenerované z [data/profile.json](data/profile.json) skriptom `scripts/render_profile.py`.
+Core V2 do `2026-10-14`, prepočítané `2026-10-17`: [agregáty vlastného textu](data/v2-writing.json). Snímka Korpusu `2026-10-13` (Europe/Bratislava), posledný ingest `2026-10-13T07:20:32.666Z`: [denný index](data/profile.json). Vygenerované skriptom `scripts/render_profile.py`.
 <!-- generated:snapshot:end -->

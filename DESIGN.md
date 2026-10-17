@@ -8,7 +8,7 @@ Thesis from the brief: Adam's measured practice, connected to the systems it cre
 
 ## Constraints that shaped it
 
-- **Numbers come from one frozen file.** Every figure in images and Markdown is rendered from `data/profile.json` by `scripts/render_profile.py`. The README keeps its numbers inside `<!-- generated:… -->` blocks so a refresh cannot leave stale prose behind.
+- **Numbers come from separate frozen snapshots.** The own-writing headline comes from `data/v2-writing.json`; the partial Korpus daily index, Git counts and provider screenshots come from `data/profile.json`. `scripts/render_profile.py` keeps those scopes separate and generates the marked README blocks and images.
 - **Provider boundaries are visible.** Codex and Claude Code tokens sit in separate cells with their own scope lines. There is no grand total anywhere.
 - **Calendar is writing, not tokens.** The 26-week grid shows human words per day from Korpus (05:00 day boundary, Europe/Bratislava). Fixed level thresholds, month labels, legend, window total and an explicit "empty ≠ idle" note. A weekly commits row sits under the same columns so the two timelines can be read together without being confused.
 - **Self-contained SVG.** No scripts, fonts, external images, `foreignObject` or links. System font stack matches GitHub's UI so the images sit in its typographic world. Tabular numerals for all measurements. Every SVG has an explicit background. The profile consistently uses the dark figures, with a responsive mobile board, so GitHub's selected theme cannot put dark SVG text on a dark page through a mismatched operating-system preference. Separate light assets remain available.
@@ -42,9 +42,10 @@ Each top-level measurement has its own stable color. Labels and positions carry 
 - `README.md`, `README.sk.md` – English main and Slovak alternate, same structure, cross-linked.
 - `assets/en/`, `assets/sk/` – desktop board, mobile board, calendar and sources × light/dark (16 generated SVGs).
 - `assets/evidence/` – two unchanged user-supplied screenshots with a provenance README.
-- `data/profile.json` – frozen aggregates; the only input to the renderer.
+- `data/profile.json` – frozen Korpus daily aggregates, Git activity and provider counters.
+- `data/v2-writing.json` – separate Core V2 own-writing reconciliation and rounded headline estimate.
 - `docs/methodology.md` – definitions, scopes, exclusions, evidence links, reproduction.
-- `scripts/export_corpus.py`, `scripts/render_profile.py`, `scripts/build_preview.py` – stdlib tooling. `preview/` is git-ignored QA only.
+- `scripts/export_corpus.py`, `scripts/export_v2_words.py`, `scripts/render_profile.py`, `scripts/build_preview.py` – stdlib tooling. `preview/` is git-ignored QA only.
 
 ## Known limits
 

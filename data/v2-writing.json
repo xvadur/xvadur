@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source_system": "Core V2",
+  "computed_on": "2026-10-17",
+  "through": "2026-10-14",
+  "coverage_years": [
+    2017,
+    2026
+  ],
+  "input_sha256": "3d5daba15426586a68aa40e42cd2c07cdc5095a525ffc9f6dd492686730d27f3",
+  "input_records": 40964,
+  "excluded_records": {
+    "other_roles": 10543,
+    "publication_boundary": 321,
+    "standalone_attachments": 67
+  },
+  "raw_classified_own_words": 3379008,
+  "converter_copy_words_removed": 3314,
+  "archive_copy_records_removed": 3339,
+  "archive_copy_words_removed": 965780,
+  "classified_own_words": 2409914,
+  "records_with_own_text": 23528,
+  "rounded_estimate_words": 2400000,
+  "rounding_words": 100000,
+  "authorship": "Existing V2 own-labelled segments; automatic classification, not a manual census or a statistical confidence interval.",
+  "copy_handling": "Same-time, same-text export copies counted once; native session forks matched at full timestamp precision. Repeated wording at different times is retained. No global text or 5-gram deduplication.",
+  "scope": "Preserved own-classified text in the available archive, including typed text and dictation. Does not measure newly composed words or all lifetime writing. Uncertain, AI, foreign and automatic segments are excluded.",
+  "sources": [
+    {
+      "source": "ChatGPT",
+      "records": 10348,
+      "words": 806178
+    },
+    {
+      "source": "Claude Code",
+      "records": 1935,
+      "words": 78387
+    },
+    {
+      "source": "Codex",
+      "records": 6981,
+      "words": 352119
+    },
+    {
+      "source": "Dia",
+      "records": 2465,
+      "words": 104360
+    },
+    {
+      "source": "Notes and transcripts",
+      "records": 248,
+      "words": 282257
+    },
+    {
+      "source": "Writing archives",
+      "records": 1551,
+      "words": 786613
+    }
+  ]
+}
